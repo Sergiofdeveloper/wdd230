@@ -164,7 +164,15 @@
     color: #ebe234;   
   }
 
- 
+  @media screen and (max-width: 767px) {
+    main {
+      padding: 10px;
+    }
+  
+    .card {
+      padding: 10px;
+    }
+  }
 
 
  
