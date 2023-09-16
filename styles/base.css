@@ -165,13 +165,13 @@
   }
 
   @media screen and (max-width: 767px) {
-    main {
-      padding: 10px;
-    }
-  
-    .card {
-      padding: 10px;
-    }
+   main {
+    padding: 10px;
+  }
+
+  .card {
+    padding: 10px;
+  }
   }
 
 
