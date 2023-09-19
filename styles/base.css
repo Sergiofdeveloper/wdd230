@@ -189,6 +189,10 @@
      footer p {
       margin: 0;
     }
+    footer img {
+      margin-left: 10px; /* Ajusta el espacio entre el texto y la imagen según sea necesario */
+      vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
+    }
   }
   
   
