@@ -179,18 +179,15 @@
     .card {
       padding: 10px;
     }
-    .footer-container {
+    footer {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
       align-items: center;
     }
-    
-    .footer-container p {
-      margin: 0; /* Elimina el margen predeterminado de los párrafos */
-      padding-right: 10px; /* Agrega espacio entre los elementos */
-    }
-    
-    .footer-container img {
-      vertical-align: middle; /* Alinea verticalmente la imagen en el centro */
+
+     footer p {
+      margin: 0;
     }
   }
   
