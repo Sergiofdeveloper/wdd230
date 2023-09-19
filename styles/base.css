@@ -177,6 +177,19 @@
     .card {
       padding: 10px;
     }
+    .footer-container {
+      display: flex;
+      align-items: center;
+    }
+    
+    .footer-container p {
+      margin: 0; /* Elimina el margen predeterminado de los párrafos */
+      padding-right: 10px; /* Agrega espacio entre los elementos */
+    }
+    
+    .footer-container img {
+      vertical-align: middle; /* Alinea verticalmente la imagen en el centro */
+    }
   }
   
   
