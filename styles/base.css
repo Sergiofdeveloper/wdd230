@@ -80,7 +80,8 @@
     max-width: 580px;  
     margin: 0 auto;  
     padding: 20px;  
-    display: grid;  
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);  
     gap: 20px; 
   }
   
@@ -186,6 +187,7 @@
     }
     main {
     padding: 10px;
+    grid-template-columns: 1fr;
   }
 
    .card {
