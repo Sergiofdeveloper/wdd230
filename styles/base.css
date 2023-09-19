@@ -173,7 +173,9 @@
       grid-template-columns: 1fr; /* Volver a una sola columna en la vista móvil */
       padding: 10px;
     }
-  
+    main h2 {
+      text-align: center;
+    }
     .card {
       padding: 10px;
     }
