@@ -179,6 +179,9 @@
     .card {
       padding: 10px;
     }
+  }
+  @media screen and (min-width: 768px) {
+    
     footer {
       display: flex;
       flex-wrap: wrap;
@@ -193,8 +196,11 @@
       margin-left: 10px; /* Ajusta el espacio entre el texto y la imagen según sea necesario */
       vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
     }
-  }
-  
+
+    footer script {
+      display: block; /* Coloca el script en otra línea */
+    }
+  } 
   
   
   
