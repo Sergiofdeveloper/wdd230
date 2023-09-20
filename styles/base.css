@@ -169,6 +169,30 @@
   }
 
   @media screen and (max-width: 767px) {
+    
+    header {
+      width: 100%; /* Hacer que el header ocupe el 100% del ancho de la pantalla en dispositivos móviles */
+      padding: 10px; /* Añadir espacio alrededor del contenido en dispositivos móviles */
+    }
+  
+    header h1 {
+      font-size: 1.5rem; /* Reducir el tamaño del encabezado h1 en dispositivos móviles */
+      margin-left: 0; /* Eliminar el margen izquierdo en dispositivos móviles */
+    }
+  
+    header img {
+      max-width: 100px; /* Limitar el ancho de la imagen en dispositivos móviles */
+      padding-left: 0; /* Eliminar el relleno izquierdo en dispositivos móviles */
+    }
+    
+    nav ul {
+      flex-direction: column; /* Mostrar elementos en columna en dispositivos móviles */
+    }
+    
+    nav li {
+      margin-bottom: 10px; /* Añadir espacio entre los elementos en columna */
+    }
+    
     main {
       grid-template-columns: 1fr; /* Volver a una sola columna en la vista móvil */
       padding: 10px;
@@ -179,9 +203,6 @@
     .card {
       padding: 10px;
     }
-  }
-  @media screen and (min-width: 768px) {
-    
     footer {
       display: flex;
       flex-wrap: wrap;
@@ -196,11 +217,8 @@
       margin-left: 10px; /* Ajusta el espacio entre el texto y la imagen según sea necesario */
       vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
     }
-
-    footer script {
-      display: block; /* Coloca el script en otra línea */
-    }
-  } 
+  }
+  
   
   
   
