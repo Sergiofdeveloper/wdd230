@@ -173,6 +173,7 @@
     header {
       width: 100%; /* Hacer que el header ocupe el 100% del ancho de la pantalla en dispositivos móviles */
       padding: 10px; /* Añadir espacio alrededor del contenido en dispositivos móviles */
+      text-align: center;
     }
   
     header h1 {
@@ -184,39 +185,32 @@
       max-width: 100px; /* Limitar el ancho de la imagen en dispositivos móviles */
       padding-left: 0; /* Eliminar el relleno izquierdo en dispositivos móviles */
     }
-    
+    nav {
+      width: 100%; /* Hacer que el nav ocupe el 100% del ancho en dispositivos móviles */
+      text-align: center;
+    }
     nav ul {
       flex-direction: column; /* Mostrar elementos en columna en dispositivos móviles */
+      align-items: center;
     }
     
     nav li {
-      margin-bottom: 10px; /* Añadir espacio entre los elementos en columna */
+      text-align: center;
+      margin: 5px 0;
     }
     
     main {
       grid-template-columns: 1fr; /* Volver a una sola columna en la vista móvil */
       padding: 10px;
     }
-    main h2 {
+    h2 {
       text-align: center;
+
     }
     .card {
       padding: 10px;
     }
-    footer {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-     footer p {
-      margin: 0;
-    }
-    footer img {
-      margin-left: 10px; /* Ajusta el espacio entre el texto y la imagen según sea necesario */
-      vertical-align: middle; /* Alinea verticalmente la imagen con el texto */
-    }
+    
   }
   
   
