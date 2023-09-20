@@ -179,15 +179,17 @@
     header h1 {
       font-size: 1.5rem; /* Reducir el tamaño del encabezado h1 en dispositivos móviles */
       margin-left: 0; /* Eliminar el margen izquierdo en dispositivos móviles */
+      text-align: center;
     }
   
     header img {
       max-width: 100px; /* Limitar el ancho de la imagen en dispositivos móviles */
-      padding-left: 0; /* Eliminar el relleno izquierdo en dispositivos móviles */
+      padding-left: 50px; /* Eliminar el relleno izquierdo en dispositivos móviles */
     }
     nav {
       width: 100%; /* Hacer que el nav ocupe el 100% del ancho en dispositivos móviles */
       text-align: center;
+      padding-left: 200px;
     }
     nav ul {
       flex-direction: column; /* Mostrar elementos en columna en dispositivos móviles */
