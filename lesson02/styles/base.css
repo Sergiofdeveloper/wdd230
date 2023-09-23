@@ -1,0 +1,146 @@
+
+body, h1, h2, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    background-color: #2E4374; 
+    color: #ffffff; 
+    text-align: center;
+    padding: 20px;
+    width: 100%; 
+    margin: 0 auto; 
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+header h1 {
+    font-size: 28px;
+    flex-grow: 1;  
+    white-space: nowrap;  
+    
+    
+}
+
+header h2 {
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.card-header {
+    background-color: #4B527E; 
+    height: 35px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start
+}
+
+
+.card {
+    background-color: #f1edea;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin: 10px;
+    width: 350px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.card h2 {
+    font-size: 20px;
+    color: #faf8f8;
+    margin-bottom: 10px;
+}
+.card-header h2 {
+    margin: 0;  
+    padding: 5px; 
+    text-align: left;
+}
+.card p {
+    font-size: 16px;
+    color: #0a0a0a;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.card-image {
+    width: 100%;
+    height: auto; 
+    margin-top: 10px
+}
+
+.card a {
+    text-decoration: underline;
+    color: #007bff;
+    padding-left: 10px;
+}
+
+footer {
+    background-color: #2E4374; 
+    color: #ffffff; 
+    text-align: center;
+    padding: 20px;
+    width: 100%; 
+    margin: 0 auto; 
+}
+#lastModified {
+    color: #fcfbf5;   
+  }
+
+
+@media (min-width: 768px) {
+    .card-container {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+    .card {
+        width: calc(50% - 20px); 
+        margin: 10px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card-container {
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        justify-content: center; 
+        align-items: stretch;
+    }
+    .card {
+        width: calc(33.33% - 20px); 
+        margin: 10px;
+        height: 100%;
+    }
+}
+@media (min-width: 1024px) {
+    .card-container {
+        flex-direction: row; 
+        flex-wrap: nowrap; 
+        justify-content: center; 
+    }
+    .card {
+        width: calc(33.33% - 20px); 
+        margin: 10px;
+    }
+}
