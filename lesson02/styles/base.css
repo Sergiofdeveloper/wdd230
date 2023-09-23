@@ -21,6 +21,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    max-width: 100%;
 }
 
 header h1 {
@@ -102,6 +103,7 @@ footer {
     padding: 20px;
     width: 100%; 
     margin: 0 auto; 
+    max-width: 100%;
 }
 #lastModified {
     color: #fcfbf5;   
