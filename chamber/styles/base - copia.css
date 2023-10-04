@@ -80,7 +80,7 @@ h1 {
     margin-right: 20px;
 }
 nav ul {
- 
+    list-style: none;
     display: flex;
 }
 
@@ -102,12 +102,7 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
-#hamburger {
-    display: none; /* Inicialmente oculto en tamaños de pantalla mayores */
-    font-size: 24px;
-    cursor: pointer;
-    margin-top: 10px;
-} 
+ 
 main {
     padding: 20px;
 }
@@ -163,19 +158,15 @@ main {
     height: auto; 
 }
 .cta {
-    position: absolute; /* Mantenemos la posición absoluta */
-    top: 25%; /* Ajustamos la posición vertical según sea necesario */
-    left: 5%;
-    display: flex; /* Usamos Flexbox */
-    flex-direction: column; /* Colocamos los elementos en columna */
-    align-items: center; /* Centramos horizontalmente en el eje principal */
-    text-align: center; /* Centramos el texto horizontalmente */
+    position: absolute;  
+    top: 25%; /* Ajustar la posición vertical según sea necesario */
+    left: 5%; /* Ajustar la posición horizontal según sea necesario */
     background-color: white; /* Fondo semitransparente */
     padding: 20px;
-    max-width: 400px; /* Ancho máximo de la caja de cta */
+    max-width: 400px;  
     max-height: 350px;
-    width: 90%; /* Establecemos un ancho máximo relativo al contenedor */
-    margin: 0 auto; /* Centramos horizontalmente en el contenedor padre */
+    width: 50%;  
+    text-align: center;
 }
 
 .cta h2 {
@@ -191,6 +182,7 @@ main {
 .cta a {
     display: block; /* Hacer que el enlace ocupe todo el ancho de la caja */
     margin-top: 10px;
+    text-align: center;
     background-color: #df6a68;  
     color: #fff;  
     text-decoration: none;
@@ -208,8 +200,7 @@ main {
     display: flex; /* Utilizamos flexbox para alinear los spotlights en una fila */
     justify-content: space-between; /* Distribuimos el espacio entre los spotlights */
     align-items: center;   
-    gap: 20px;  
-    margin-top: 15px;
+    margin-top: 15px;   
     overflow-x: auto;
 }
 
@@ -220,6 +211,7 @@ main {
     text-align: center;
     font-size: 1.2rem;
     flex-grow: 1; /* Hace que los spotlights ocupen el espacio disponible */
+    margin-right: 15px; /* Margen derecho de 15px para crear espacio entre los spotlights */
     min-width: 0; /* Permite que los spotlights se reduzcan si el contenido es más estrecho */
 }
 
@@ -244,28 +236,5 @@ footer {
     .cta h2 {
         font-size: 1.2rem; /* Tamaño de fuente más pequeño en dispositivos móviles */
     }
-    #hamburger {
-        display: block; /* Mostrar el botón de hamburguesa */
-        text-align: right;
-        padding: 10px;
-    }
 
-    /* Estilos para la lista de navegación */
-    nav {
-        width: 100%;
-        text-align: center;
-    }
-
-    nav ul {
-        display: none;
-        padding: 10px 0;
-         
-    }
-
-    nav li {
-        font-size: 18px;
-        margin-bottom: 10px;
-        height: auto;
-    }
-    
 }
