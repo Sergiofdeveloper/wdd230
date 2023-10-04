@@ -231,6 +231,16 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
+
+@media screen and (min-width: 769px) {
+    nav ul {
+        display: flex; /* O 'block' según tu preferencia */
+    }
+}
+
+#hamburger {
+    display: none;
+}
 @media screen and (max-width: 768px) {
     .menu {
         flex-direction: column; /* Cambiar a dirección de columna */
