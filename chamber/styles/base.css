@@ -40,18 +40,18 @@ nav ul {
 }
 
 nav li {
-    margin-bottom: 10px; /* Agregamos espacio entre los elementos */
+    margin-bottom: 10px; 
     padding-right: 55px;
 }
 
 nav a {
-    font-size: 20px; /* Aumentamos el tamaño del texto de los enlaces */
+    font-size: 20px;  
     text-decoration: none;
-    color: #333; /* Cambiamos el color de los enlaces */
+    color: #333;  
 }
 
 nav a:hover {
-    color: #e4b1ab; /* Cambiamos el color al pasar el ratón */
+    color: #e4b1ab;  
 }
 .logo {
     max-width: 400px; /* Establece el ancho máximo deseado para el logo */
@@ -103,7 +103,7 @@ nav ul li a {
     font-weight: bold;
 }
 #hamburger {
-    display: none; /* Inicialmente oculto en tamaños de pantalla mayores */
+    display: none; 
     font-size: 24px;
     cursor: pointer;
     margin-top: 10px;
@@ -129,9 +129,9 @@ main {
 .current-events h2 {
     font-size: 2rem;
     margin-bottom: 10px;
-    border-bottom: 2px solid #333; /* Agregamos una línea debajo del título */
+    border-bottom: 2px solid #333;  
     width: 95%; /* Ajustamos el ancho de la línea al 80% del contenedor */
-    padding-bottom: 5px; /* Espacio entre la línea y el texto */
+    padding-bottom: 5px;  
 }
 .weather-card {
     flex: 1;  
@@ -155,7 +155,7 @@ main {
 .hero {
     position: relative; /* Establecer posición relativa */
     max-width: 100%; /* Establecemos un ancho máximo para la sección */
-    margin: 0 auto; /* Centramos la sección horizontalmente */
+    margin: 0 auto;   
     overflow: hidden;
 }
 .hero img {
@@ -166,13 +166,13 @@ main {
     position: absolute; /* Mantenemos la posición absoluta */
     top: 25%; /* Ajustamos la posición vertical según sea necesario */
     left: 5%;
-    display: flex; /* Usamos Flexbox */
+    display: flex;  
     flex-direction: column; /* Colocamos los elementos en columna */
     align-items: center; /* Centramos horizontalmente en el eje principal */
     text-align: center; /* Centramos el texto horizontalmente */
-    background-color: white; /* Fondo semitransparente */
+    background-color: white;  
     padding: 20px;
-    max-width: 400px; /* Ancho máximo de la caja de cta */
+    max-width: 400px;  
     max-height: 350px;
     width: 90%; /* Establecemos un ancho máximo relativo al contenedor */
     margin: 0 auto; /* Centramos horizontalmente en el contenedor padre */
@@ -201,7 +201,7 @@ main {
 }
 
 .cta a:hover {
-    background-color: #a02c32; /* Color de fondo del botón al pasar el ratón */
+    background-color: #a02c32;  
      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
 }
 .company-advertisements {
@@ -234,7 +234,7 @@ footer {
 
 @media screen and (min-width: 769px) {
     nav ul {
-        display: flex; /* O 'block' según tu preferencia */
+        display: flex;  /
     }
 }
 
@@ -243,24 +243,24 @@ footer {
 }
 @media screen and (max-width: 768px) {
     .menu {
-        flex-direction: column; /* Cambiar a dirección de columna */
+        flex-direction: column; 
     }
 
     .menu li {
-        margin-right: 0; /* Eliminar margen derecho */
-        margin-bottom: 10px; /* Agregar espacio vertical entre elementos */
+        margin-right: 0;   
+        margin-bottom: 10px; 
     }
 
     .cta h2 {
-        font-size: 1.2rem; /* Tamaño de fuente más pequeño en dispositivos móviles */
+        font-size: 1.2rem; 
     }
     #hamburger {
-        display: block; /* Mostrar el botón de hamburguesa */
+        display: block;   
         text-align: right;
         padding: 10px;
     }
 
-    /* Estilos para la lista de navegación */
+     
     nav {
         width: 100%;
         text-align: center;
