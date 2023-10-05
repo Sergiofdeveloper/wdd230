@@ -164,7 +164,7 @@ main {
 }
 .cta {
     position: absolute; /* Mantenemos la posición absoluta */
-    top: 25%; /* Ajustamos la posición vertical según sea necesario */
+    top: 10%; /* Ajustamos la posición vertical según sea necesario */
     left: 5%;
     display: flex;  
     flex-direction: column; /* Colocamos los elementos en columna */
@@ -250,6 +250,12 @@ footer {
         margin-right: 0;   
         margin-bottom: 10px; 
     }
+    .cta {
+        position: static; /* Elimina la posición absoluta para que fluya con el contenido */
+        top: auto; /* Elimina la posición vertical personalizada */
+        left: auto; /* Elimina la posición horizontal personalizada */
+        margin-top: 20px; 
+      }
 
     .cta h2 {
         font-size: 1.2rem; 
@@ -276,6 +282,22 @@ footer {
         font-size: 18px;
         margin-bottom: 10px;
         height: auto;
+    }
+    .current-events,
+    .weather-card
+    {
+    flex: 1; /* Ajusta el espacio disponible */
+    margin-right: 10px;
+    margin-bottom: 10px;
+    min-width: 300px;
+    }
+    .company-advertisements {
+    flex-direction: column; /* Cambiar a disposición vertical */
+    align-items: center; 
+    }
+     .advertisement {
+    margin-bottom: 10px;  
+    max-width: 100%;  
     }
     
 }
