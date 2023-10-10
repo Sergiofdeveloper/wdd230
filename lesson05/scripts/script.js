@@ -40,7 +40,7 @@
 
         } else {
             // muestra un mensaje
-            alert('Please enter a chapter from the Book of mormon');
+            alert('Please enter a chapter from the Book of Mormon');
             inputElement.focus();
         }
     });
