@@ -75,7 +75,17 @@ h1 {
     margin: 0;
 
 }
-
+.menu-switch {
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed */
+    right: 20px; /* Adjust the right position as needed */
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
 .menu li {
     margin-right: 20px;
 }
@@ -304,11 +314,7 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-.menu-switch {
-    position: absolute;
-    top: 10px; /* Adjust the top position as needed */
-    right: 20px; /* Adjust the right position as needed */
-}
+
 
  
 
