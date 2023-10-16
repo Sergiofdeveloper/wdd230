@@ -71,11 +71,11 @@
     display: block;  
     text-align: center;
   }
-  a:hover::after {
+  nav a:hover::after {
     content: ""; 
     display: block;
     height: 2px; 
-    background-color: #c2f607; 
+    background-color: #c2f607;
     
   }
   
