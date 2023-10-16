@@ -124,7 +124,7 @@
   
   
   .card ul {
-    list-style-type: decimal;  
+   /* list-style-type: decimal;  */
     padding-left: 40px;;
   }
   
