@@ -35,31 +35,34 @@
     </nav>
     <h2>WDD 230: Web Frontend Development</h2>
     <main>
-        <picture>
-            <source srcset="images/london-temple-small.webp" media="(max-width: 400px)">
-            <img src="images/london-temple-large.webp" alt="London Temple" width="960" height="535">
-        </picture>
+        <div class="image-container"></div>
+            <picture>
+                <source srcset="images/london-temple-small.webp" media="(max-width: 400px)">
+                <img src="images/london-temple-large1.webp" alt="London Temple" width="600" height="334">
+            </picture>
+            <div class="image-label">London Temple</div>
+        </div>   
+        <div class ="card-wrapper">
+            <section class="card">
+                <h3>Learning Activities</h3>
+                <ul>
+                    <li><a href="images/combinators.webp"> Combinators</a></li>
+                    <li><a href="https://codepen.io/Sergiofdeveloper/pen/xxmWzoO"> CSS Pseudo Elements</a></li>
+                    <li><a href="https://codepen.io/Sergiofdeveloper/pen/bGOMBOM"> Hamburger Menu</a></li>
+                    <li><a href="https://codepen.io/Sergiofdeveloper/pen/poqORmG">Pseudo-Class Fun</a></li>
+                    <li><a href="images/landscape.webp">WebP</a></li>
+                    <li><a href="lesson06/responsive-images.html">Responsive-images</a></li>
+                </ul>
+            </section>
+        
+            <section class="card information">
+                <h3>Information</h3>
+                <p>Zaragoza, Spain</p>
+                <p>26° - Cloudy</p>
+                <p>Page visits: 1</p>
 
-        <section class="card">
-            <h3>Learning Activities</h3>
-            <ul>
-                <li><a href="images/combinators.webp"> Combinators</a></li>
-                <li><a href="https://codepen.io/Sergiofdeveloper/pen/xxmWzoO"> CSS Pseudo Elements</a></li>
-                <li><a href="https://codepen.io/Sergiofdeveloper/pen/bGOMBOM"> Hamburger Menu</a></li>
-                <li><a href="https://codepen.io/Sergiofdeveloper/pen/poqORmG">Pseudo-Class Fun</a></li>
-                <li><a href="images/landscape.webp">WebP</a></li>
-                <li><a href="lesson06/responsive-images.html">Responsive-images</a></li>
-            </ul>
-        </section>
-    
-        <section class="card information">
-            <h3>Information</h3>
-            <p>Zaragoza, Spain</p>
-            <p>26° - Cloudy</p>
-            <p>Page visits: 1</p>
-
-            
-        </section>
+            </div>        
+            </section>
     </main>
 
     <iframe 
