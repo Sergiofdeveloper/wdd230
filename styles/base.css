@@ -125,7 +125,7 @@
  
   .card-wrapper .card {
     flex: 1;
-    max-width: calc(50% - 20px);
+    max-width: calc(50% - 15px);
 }
     
   .card {
