@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Zaragoza Chamber of Commerce - Your gateway to local business and community information.">
     <meta name="author" content="Sergio Flores">  
-    <title>ZARAGOZA CHAMBER OF COMMERCE</title>
+    <title>ZARAGOZA CHAMBER OF COMMERCE</title>.
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="icon" href="images/favicon.ico" type="images">  
 
@@ -53,8 +54,9 @@
                     <a href="#" class="join-button">Join the Chamber</a>
                 </div>
                 <picture>
-                    <source srcset="images/small-hero-image.webp" media="(max-width: 786px)">
-                    <img src="images/large-hero-image.webp" alt="Join Chamber of Commerce">
+                    <source srcset="images/hero-image-small.webp" media="(max-width: 500px)">
+                    <source srcset="images/hero-image-medium.webp" media="(max-width: 1000px)">
+                    <img src="images/hero-image-large.webp" alt="Join Chamber of Commerce" width="1500" height="822">
                 </picture>
                 
             </div>
@@ -79,9 +81,9 @@
          <section class="weather-card">
                 <h2>Weather</h2>
                 <div class="weather-info">
-                    <p><img src="images/cloudy.png" alt="Cloudy weather" class="temperature-icon">Current Temperature: 25°C</p>
-                    <p>Weather Condition: Cloudy</p>
-                    <p>Wind Speed: 10 km/h</p>
+                    <p><img src="images/cloudy.png" alt="Cloudy weather" class="temperature-icon">Current Temperature: <span id="temperature">45</span>°F</p>
+                    <p>Wind Speed: <span id="wind-speed">5</span> m/h</p>
+                    <p>Wind Chill: <span id="wind-chill"> </span></p>
                 </div>
             </section>
         </div>     
@@ -116,6 +118,7 @@
     </footer>
     <script src="scripts/hamburger-menu.js"></script>
     <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/windchills.js"></script>
 </div>
 </body>
 </html>
