@@ -17,5 +17,5 @@ if (numberVisits !== 0) {
 numberVisits++;
 
 // 5️⃣ Almacena el nuevo total de visitas en localStorage, clave=numVisitas-ls
-localStorage.setItem("numberVisits ", numberVisits);
+localStorage.setItem("numberVisits", numberVisits);
 });
