@@ -242,6 +242,31 @@ footer {
     padding: 10px 0;
 }
 
+.sidebar {
+    padding: 10px; /* Add spacing around the entire sidebar */
+}
+
+.sidebar a {
+    text-decoration: none; /* Remove underlines from links in the sidebar */
+    color: #333; /* Set the text color for links in the sidebar */
+}
+.events,
+.Job-vacancies,
+.employment-rate,
+.sidebar-content {
+    background-color: #fbefee; /* Set the background color for individual sections */
+    margin-bottom: 10px; /* Add space below each section */
+    padding: 10px; /* Add padding inside each section */
+    text-align: center;
+}
+.sidebar .events h2,
+.sidebar .Job-vacancies h2,
+.sidebar .employment-rate h2,
+.sidebar .sidebar-content h2 {
+    text-decoration: underline;
+    text-align: center;
+}
+
 @media screen and (min-width: 769px) {
     nav ul {
         display: flex;  
