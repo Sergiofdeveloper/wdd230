@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Zaragoza Chamber of Commerce - Your gateway to local business and community information.">
+        <meta name="author" content="Sergio Flores">  
+        <title>ZARAGOZA CHAMBER OF COMMERCE</title>.
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">  
+        <meta property="og:title" content="ZARAGOZA CHAMBER OF COMMERCE">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://sergiofdeveloper.github.io/wdd230/chamber/index.html">  
+        <meta property="og:image" content="https://sergiofdeveloper.github.io/wdd230/chamber/images/chamber-of-commerce.jpg">  
+        <meta property="og:description" content="Zaragoza Chamber of Commerce">  
+    </head>
+    <body>
+        <div id="content-wrapper">
+        <header>
+            <div class="menu-switch ">
+                <label class="switch">
+                    <input type="checkbox" id="menuToggle">
+                    <span class="slider round"></span>
+                </label>
+            </div> 
+            <button id="hamburger">&#8801;</button>
+            <div class="logo">
+                    <img src="images/logo.webp" alt="Zaragoza Chamber of Commerce">
+            </div>
+            <div class="header-content"> 
+                <h1>ZARAGOZA CHAMBER OF COMMERCE</h1>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="#">Directory</a></li>
+                        <li><a href="#">Join</a></li>
+                    </ul>
+                    
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="flex-container">
+                <div class="sidebar">
+                    <div class="current-events">
+                        <h2>Current Events</h2>
+                        <!-- Sidebar content related to current events -->
+                    </div>
+                    <div class="weather-card">
+                        <h2>Weather</h2>
+                        <!-- Sidebar content related to weather -->
+                    </div>
+                    <div class="sidebar-content">
+                        <p id="visit-message"></p>
+                    </div>
+                </div>
+                <div class="image-gallery">
+                    <!-- Lazy-loaded images with captions -->
+                    <div class="image">
+                        <img data-src="images/image1.jpg" alt="Image 1">
+                        <figcaption>Caption 1</figcaption>
+                    </div>
+                    <!-- Add more images and captions as needed -->
+                </div>
+            </div>
+                
+        </main>
+        <footer>
+            <div class="development-info">
+                <p>@2023 Zaragoza Chamber of Commerce</p>
+                <p>Sergio Flores</p> 
+                <p>WDD 230 Project</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+            <script src="scripts/last-modified.js"></script>
+        </footer>
+        <script src="scripts/hamburger-menu.js"></script>
+        <script src="scripts/dark-mode.js"></script>
+        <script src="scripts/windchills.js"></script>
+        <script src="scripts/visits.js"></script>
+    </div>
+    </body>
+</html>
