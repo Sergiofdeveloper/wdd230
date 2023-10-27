@@ -323,10 +323,6 @@ footer {
 #hamburger {
     display: none;
 }
-header .header-content h1 {
-    font-size: 24px; /* Tamaño de fuente en dispositivos móviles */
-    margin-bottom: 0; /* Elimina el margen inferior para aprovechar más el espacio */
-}
 
  
 .switch {
@@ -391,78 +387,95 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+/* Estilos para la versión móvil */
 @media screen and (max-width: 768px) {
-    .menu {
-        flex-direction: column; 
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
     }
-
-    .menu li {
-        margin-right: 0;   
-        margin-bottom: 10px; 
+  
+    .menu-switch {
+      display: block;
     }
-    .cta {
-        position: static; /* Elimina la posición absoluta para que fluya con el contenido */
-        top: auto; /* Elimina la posición vertical personalizada */
-        left: auto; /* Elimina la posición horizontal personalizada */
-        margin-top: 20px; 
+    h1 {
+        display: none; /* Ocultar el h1 en la versión móvil */
       }
-
-    .cta h2 {
-        font-size: 1.2rem; 
-    }
     #hamburger {
-        display: block;   
-        text-align: right;
-        padding: 10px;
+      display: block;
+      font-size: 24px;
+      cursor: pointer;
+      margin-top: 10px;
     }
-
-     
-    nav {
-        width: 100%;
-        text-align: center;
+  
+    .logo {
+      max-width: 90%; /* Ocupar la mayor parte del ancho disponible */
     }
-
+  
     nav ul {
-        display: none;
-        padding: 10px 0;
-         
+      display: none; /* Inicialmente, ocultar el menú de navegación en la versión móvil */
     }
-
-    nav li {
-        font-size: 18px;
-        margin-bottom: 10px;
-        height: auto;
+  
+    .switch {
+      display: block;
+      margin-top: 10px;
     }
+  
+    .menu {
+      flex-direction: column;
+    }
+  
+    .menu li {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .cta {
+      position: static;
+      top: auto;
+      left: auto;
+      margin-top: 20px;
+    }
+  
+    .cta h2 {
+      font-size: 1.2rem;
+    }
+  
     .current-events,
-    .weather-card
-    {
-    flex: 1; /* Ajusta el espacio disponible */
-    margin-right: 10px;
-    margin-bottom: 10px;
-    min-width: 300px;
+    .weather-card {
+      flex: 1;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      min-width: 300px;
     }
+  
     .company-advertisements {
-    flex-direction: column; 
-    align-items: center; 
+      flex-direction: column;
+      align-items: center;
     }
-     .advertisement {
-    margin-bottom: 10px;  
-    max-width: 100%;  
+  
+    .advertisement {
+      margin-bottom: 10px;
+      max-width: 100%;
     }
+  
     .flex-container {
-        flex-direction: column;
+      flex-direction: column;
     }
+  
     .sidebar {
-        max-width: 100%;  
-        padding-right: 0;  
+      max-width: 100%;
+      padding-right: 0;
     }
-
+  
     .sidebar,
     .image-gallery {
-        flex: 1; /* Ambos ocupan el ancho completo en la vista de móvil */
+      flex: 1;
     }
+  
     .image-gallery .image picture:hover {
-        box-shadow: none;  
+      box-shadow: none;
     }
-    
-}
+  }
+  
