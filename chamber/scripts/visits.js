@@ -1,36 +1,33 @@
- 
-// milliseconds to days constant
-const msToDays = 84600000;
+document.addEventListener("DOMContentLoaded", function () {
+    //  fecha actual en milisegundos
+    const currentDate = Date.now();
 
-// Get the last visit date from localStorage
-const lastVisit = localStorage.getItem("lastVisit");
+    // recoge la ultima visita de localStorage
+    const lastVisit = localStorage.getItem("lastVisit");
 
-// Initialize display elements
-const sidebarMessage = document.getElementById("visit-message");
-
-// Today's date
-const theDateToday = new Date();
-
-// Processing
-const today = Date.now();
-
-if (lastVisit) {
-    // Convert the stored date string to a Date object
-    const lastVisitDate = new Date(lastVisit);
-
-    // Calculate the number of days between visits
-    let daysBetweenVisits = (today - lastVisitDate.getTime()) / msToDays;
-
-    if (daysBetweenVisits === 1) {
-        sidebarMessage.textContent = "You last visited 1 day ago.";
+    // primera visita
+    if (!lastVisit) {
+        // Mensaje de bienvenida
+        document.getElementById("visit-message").textContent = "Welcome! Let us know if you have any questions.";
     } else {
-        sidebarMessage.textContent = `You last visited ${daysBetweenVisits.toFixed(0)} days ago.`;
-    }
-} else {
-    // If it's the first visit, display a welcome message
-    sidebarMessage.textContent = "Welcome! Let us know if you have any questions.";
-}
+        // Calcula en tiempo entre visitas en milisegundos
+        const timeDifference = currentDate - lastVisit;
 
-// Store the current visit date in localStorage
-localStorage.setItem("lastVisit", today);
- 
+       // Calcula en tiempo entre visitas en dias
+        const daysBetweenVisits = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+        if (daysBetweenVisits === 1) {
+            // mensaje cuando solo un dia
+            document.getElementById("visit-message").textContent = `You last visited 1 day ago.`;
+        } else if (daysBetweenVisits > 1) {
+            // mensaje para mas de un dia
+            document.getElementById("visit-message").textContent = `You last visited ${daysBetweenVisits} days ago.`;
+        } else {
+            // Mensaje para menos de un dia
+            document.getElementById("visit-message").textContent = "Back so soon! Awesome!";
+        }
+    }
+
+    // Guarda la fecha en localStorage
+    localStorage.setItem("lastVisit", currentDate);
+});
