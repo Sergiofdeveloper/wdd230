@@ -28,7 +28,7 @@ header h1 {
 
 }
 header .header-content h1 {
-    font-size: 3vw; /* Usar vw (ancho de la ventana) para el tamaño de fuente */
+    font-size: 36px;
     margin-bottom: 20px;
     text-align: left;
 }
@@ -84,7 +84,7 @@ h1 {
     position: relative;
     display: inline-block;
     width: 60px;
-    height: 34px;
+    height: 34px;  
 }
 .menu li {
     margin-right: 20px;
