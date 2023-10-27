@@ -8,11 +8,11 @@ const weatherCard = document.querySelector('.weather-card');
 const elementsToApplyDarkMode = document.querySelectorAll(
     '.company-advertisements, .advertisement'
   );const cta = document.querySelector('.cta');
-let isDarkMode = false; // Initial state
+let isDarkMode = false;  
 
 menuToggle.addEventListener('change', function () {
     if (this.checked) {
-        // Turn on dark mode
+        // cambiar a modo oscuro
         contentWrapper.style.backgroundColor = "#000";
         contentWrapper.style.color = "#fff";
         header.style.backgroundColor = "#000";
@@ -30,7 +30,7 @@ menuToggle.addEventListener('change', function () {
           });
         isDarkMode = true;
     } else {
-        // Turn off dark mode
+        // apagar modo oscuro
         contentWrapper.style.backgroundColor = "#eee";
         contentWrapper.style.color = "#000";
         header.style.backgroundColor = "#a02c32";
