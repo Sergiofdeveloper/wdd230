@@ -308,7 +308,7 @@ footer {
 }
 
 .image-gallery .image img:hover {
-    opacity: 0.7; /* Reduce opacity to 70% on hover */
+    opacity: 0.7;  
 }
 
 
@@ -322,6 +322,10 @@ footer {
 
 #hamburger {
     display: none;
+}
+header .header-content h1 {
+    font-size: 24px; /* Tamaño de fuente en dispositivos móviles */
+    margin-bottom: 0; /* Elimina el margen inferior para aprovechar más el espacio */
 }
 
  
