@@ -238,7 +238,7 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
-/* styles for discovery page */
+/* STYLES FOR DISCOVERY PAGE */
 .flex-container {
     display: flex;  
     flex-wrap: wrap;  
@@ -271,6 +271,11 @@ footer {
 .sidebar .sidebar-content h2 {
     text-decoration: underline;
     text-align: center;
+}
+.employment-rate picture img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;  
 }
 #visit-message {
     font-weight: bold;
