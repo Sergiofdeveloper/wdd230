@@ -250,8 +250,8 @@ footer {
     
 }
 .sidebar {
-    flex:1;
-   padding-right: 10px;   
+   flex:1;
+   padding-right: 50px;   
 }
 
 .sidebar a {
