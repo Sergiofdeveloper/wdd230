@@ -54,7 +54,7 @@ nav a:hover {
     color: #e4b1ab;  
 }
 .logo {
-    max-width: 400px; /* Establece el ancho máximo deseado para el logo */
+    max-width: 400px; 
 }
 
 .logo img {
@@ -192,7 +192,7 @@ main {
 }
 
 .cta a {
-    display: block; /* Hacer que el enlace ocupe todo el ancho de la caja */
+    display: block;  
     margin-top: 10px;
     background-color: #df6a68;  
     color: #fff;  
@@ -238,7 +238,7 @@ footer {
 .flex-container {
     display: flex;  
     flex-wrap: wrap;  
-    justify-content: space-between; /* Distribuimos el espacio entre las secciones */
+    justify-content: space-between;  
     
 }
 .sidebar {
@@ -247,16 +247,16 @@ footer {
 }
 
 .sidebar a {
-    text-decoration: none; /* Remove underlines from links in the sidebar */
-    color: #333; /* Set the text color for links in the sidebar */
+    text-decoration: none; 
+    color: #333;
 }
 .events,
 .Job-vacancies,
 .employment-rate,
 .sidebar-content {
-    background-color: #fbefee; /* Set the background color for individual sections */
-    margin-bottom: 10px; /* Add space below each section */
-    padding: 10px; /* Add padding inside each section */
+    background-color: #fbefee; 
+    margin-bottom: 10px; 
+    padding: 10px; 
     text-align: center;
 }
 .sidebar .events h2,
@@ -268,7 +268,7 @@ footer {
 }
 .image-gallery {
     flex: 2;
-    /* Estilos para la galería de imágenes, según tus necesidades */
+    margin-bottom: 10px
 }
 
 
@@ -396,7 +396,7 @@ input:checked + .slider:before {
     min-width: 300px;
     }
     .company-advertisements {
-    flex-direction: column; /* Cambiar a disposición vertical */
+    flex-direction: column; 
     align-items: center; 
     }
      .advertisement {
