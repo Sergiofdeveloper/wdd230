@@ -223,7 +223,6 @@ main {
     overflow-x: auto;
 }
 
- 
 .advertisement {
     background-color: #e39695;   
     padding: 20px;
@@ -233,15 +232,13 @@ main {
     min-width: 0; /* Permite que los spotlights se reduzcan si el contenido es más estrecho */
 }
 
-
-
 footer {
     background-color: #a02c32;  
     color: #fff;  
     text-align: center;
     padding: 10px 0;
 }
-/* styles for descovery page */
+/* styles for discovery page */
 .flex-container {
     display: flex;  
     flex-wrap: wrap;  
@@ -260,7 +257,7 @@ footer {
     color: #333;
 }
 .events,
-.Job-vacancies,
+.job-vacancies,
 .employment-rate,
 .sidebar-content {
     background-color: #fbefee; 
@@ -269,7 +266,7 @@ footer {
     text-align: center;
 }
 .sidebar .events h2,
-.sidebar .Job-vacancies h2,
+.sidebar .job-vacancies h2,
 .sidebar .employment-rate h2,
 .sidebar .sidebar-content h2 {
     text-decoration: underline;
@@ -289,10 +286,19 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
     grid-gap: 10px;
+    animation: fade 10s;
+}
+@keyframes fade{
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .image-gallery picture img {
-    max-width: 100%; /* Asegura que las imágenes se adapten al ancho del contenedor */
+    max-width: 100%;
     height: auto;
 }
 
