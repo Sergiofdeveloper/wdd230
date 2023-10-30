@@ -24,17 +24,17 @@ th {
     color: #fff;
 }
 th.basic {
-    background-color: #494745; /* Light Salmon */
+    background-color: #494745; 
     color: #fff;
 }
 
 th.premium {
-    background-color: #494745; /* Light Sky Blue */
+    background-color: #494745; / 
     color: #fff;
 }
 
 th.deluxe {
-    background-color: #494745; /* Pale Green */
+    background-color: #494745; 
     color: #fff;
 }
 
@@ -45,11 +45,6 @@ tr:nth-child(odd) {
 tr:nth-child(even) {
     background-color: #fff;
 }
-
-
-
-
-
 
 tr:nth-child(odd) {
     background-color: #f2f2f2;
