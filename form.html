@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Registration Form">
+    <title>Registration Form</title>
+    <meta name="author" content="Sergio Flores">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="icon" href="favicon.ico">   
+</head>
+<body>
+    <header>
+
+    </header>
+    <navigation>
+
+    </navigation>
+    <main>
+        
+        <form method="get" action="record.html">
+            <fieldset>
+            <legend>Registration Form</legend>
+            <label class="top">Username*<input type="text" id="username" name="username" required></label>
+            <label class="top">Password*<input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}" title="At least 8 characters, alphanumeric"></label>        
+            <label class="top">Confirm Password*<input type="password" id="confirmPassword" name="confirmPassword" required pattern="[a-zA-Z0-9]{8,}" title="At least 8 characters, alphanumeric" oninput="checkPassword()"></label>
+            <span id="wrongPassword" style="color: red;"></span>
+            <label class="top">Email<input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
+
+            <label for="r"></label>
+            <label class="top">Page Rating</label>
+                <div id="rangevalue">0</div>
+                <input type="range" id="r" name="r" min="0" max="10" value="0" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+
+            <input type="submit" value="Send form" class="submitBtn">
+        </fieldset>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="scripts/form.js"></script>
+    <script src="scripts/value.js"></script>
+</body>
+</html>

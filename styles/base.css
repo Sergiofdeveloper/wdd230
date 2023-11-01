@@ -210,7 +210,117 @@
   #lastModified {
     color: #fcfbf5;   
   }
+/* --------FORM--------*/
+header{
+  display: none;
+}
 
+footer{
+  display: none;
+}
+:root {
+  --main-color: #09538f;
+  --secondary-color: #0c6bb7;
+  --error-color: red;
+}
+
+form fieldset{
+  margin:2rem 0;
+  border: 1px solid  #445ba9;
+  border-radius: 10px;
+  padding:1rem 4rem;
+}
+
+form legend{
+  color: #445ba9;
+  font-weight: bold;
+  margin: 0 1rem;
+  padding: 0 .5rem;
+  font-size: 30px;
+  border: none;
+
+}
+
+form label.top, form div{
+  display: block;
+  padding-top: 1rem;
+  color: #9c2c13;
+  font-size: 1rem;
+  text-align: left;
+}
+
+form label.top input, form label.top select{
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: .75rem;
+  color: #555;
+  width: 100%;
+  max-width: 28rem;
+  background-color: rgba(0,0,0,0.1);
+}
+
+form input.submitBtn{
+  border:none;
+  background-color: #09538f;
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 30px 30px 30px 25px;
+  width: 96%;
+  max-width: 20rem;
+  transition: background-color 0.3s;
+}
+form input.submitBtn:hover {
+  background-color: #0c6bb7; /* Change the background color on hover */
+}
+/* esto es para ayudar con las casillas requeridas*/
+
+form label.top input:required{
+ border-left: red solid 6px; 
+}
+
+form label.top input:required:valid{
+  border-left: green solid 6px; 
+}
+#r {
+	width: 200px;
+	margin-bottom: 0;
+}
+
+#rangevalue {
+	font-size: 2rem;
+	color: navy;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
+form label.top input[type="range"] {
+  margin-bottom: 20px;  
+}
+
+form label.top input[type="range"]::after {
+  content: "0 1 2 3 4 5 6 7 8 9 10"; 
+  display: block;
+  text-align: center;
+  font-size: 14px;
+}
+
+#rangevalues {
+	display: flex;
+  margin-left: 55px;
+	width: 205px;
+}
+
+#rangevalues option {
+	flex: 1 1 auto;
+}
+
+
+/*----------------MEDIA SCREEN-----------------*/
   @media screen and (max-width: 767px) {
     
     header {
