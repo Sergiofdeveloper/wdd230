@@ -316,18 +316,16 @@ footer {
     justify-content: center; /* Centra horizontalmente el contenido */
     align-items: center; /* Centra verticalmente el contenido (opcional) */
     
-  }
+}
 main .container-form{
     display: grid;
     grid-template-columns: 1fr 1fr; /* Divide en dos columnas de igual ancho */
-    grid-gap: 20px; /* Espacio entre las columnas */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    text-align: center;
-    margin: 0 auto; 
+    justify-content: center; /* Centra los elementos horizontalmente */ 
     
 }
 .form-fieldset {
-    
+    padding-right: 50px;
+    padding-left: 30px;
     background-color: #fbefee;
     margin-top: 30px;
     margin-right: 30px;
@@ -340,23 +338,25 @@ main .container-form{
     background-color: #fbefee;
     margin-top: 0;
     display: inline-block;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-bottom: 20px;
+    font-size: 18px;
 }
 .benefits-container h2 {
     color: #a02c32;
     border-bottom: 2px solid #a02c32; /* Línea de subrayado */
-    padding-bottom: 0px; /* Espacio entre el texto y la línea de subrayado */
-    
-  } 
+    padding-bottom: 20px; /* Espacio entre el texto y la línea de subrayado */
+    text-align: center;
+} 
 
 .benefits-column  {
     padding-bottom: 30px;
-  }
+    padding-left: 40px;
+    padding-right: 40px;
+}
   
 
-  .benefits-container h2::before,
-  .benefits-container h2::after {
+.benefits-container h2::before,
+.benefits-container h2::after {
     content: "\2605"; /* Código Unicode de una estrella dorada */
     color: gold;  
     margin: 0 10px;  
@@ -365,7 +365,7 @@ legend{
     color: #a02c32;
     margin: 0 1rem;
     padding: 0 .5rem;
-    font-size: 22px;
+    font-size: 35px;
     font-weight: bold;
 }
 form label.top{
@@ -391,9 +391,10 @@ form .submitBtn{
     width: 96%;
     max-width: 20rem;
 }
-input{
+.input-text{
     padding: 8px; /* Ajusta el relleno (padding) vertical según tus necesidades */
     font-size: 20px;
+    width: 100%;
     
 }
 textarea {
