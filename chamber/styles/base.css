@@ -409,7 +409,7 @@ textarea {
 }
 
 
-/* STYLES FOR MEDIA*/
+/* STYLES FOR MEDIA MIN-WIDTH 769PX */
 
 @media screen and (min-width: 769px) {
     nav ul {
@@ -484,10 +484,15 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+.main .container-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    grid-gap: 20px;
+}
 
 
-
-/* ESTILOS VERSION MOVIl */
+/* ESTILOS VERSION MOVIl MAX-WIDTH 768 */
 @media screen and (max-width: 768px) {
     header {
       display: flex;
@@ -577,5 +582,9 @@ input:checked + .slider:before {
     .image-gallery .image picture:hover {
       box-shadow: none;
     }
+    .main .container-form {
+        display: block;  
+    }
+    
   }
   
