@@ -349,9 +349,9 @@ main .container-form{
 } 
 
 .benefits-column  {
-    padding-bottom: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 25px;
 }
   
 
@@ -387,10 +387,16 @@ form .submitBtn{
     color: white;
     border-radius: 1rem;
     padding: .75rem 1.5rem;
-    margin-top: 30px;
-    width: 96%;
-    max-width: 20rem;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 100%;
+    font-size: 26px;
 }
+form .submitBtn:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    background-color:#c92918; 
+}
+
 .input-text{
     padding: 8px; /* Ajusta el relleno (padding) vertical según tus necesidades */
     font-size: 20px;
