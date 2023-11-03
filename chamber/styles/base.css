@@ -373,6 +373,7 @@ form label.top{
     padding-top: 1rem;
     color: #a92306;
     font-size: 0.9rem;
+    font-weight: bold;
 }
 
 form label.sbs{
