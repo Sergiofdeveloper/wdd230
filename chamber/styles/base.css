@@ -461,10 +461,6 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-/* .form-container {
-    float: left; /* Float the form to the left in larger views */
-    margin-right: 20px; /* Add some spacing between form and benefits */
-} */
 
 .benefits-container {
     width: calc(100% - 420px); /* Adjust the width of the benefits container based on the form width and margin */
