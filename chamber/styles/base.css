@@ -324,7 +324,7 @@ main .container-form{
     
 }
 .form-fieldset {
-    padding-right: 50px;
+    padding-right: 10px;
     padding-left: 30px;
     background-color: #fbefee;
     margin-top: 30px;
@@ -372,7 +372,7 @@ form label.top{
     display: block;
     padding-top: 1rem;
     color: #a92306;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 form label.sbs{
@@ -400,11 +400,11 @@ form .submitBtn:hover {
 .input-text{
     padding: 8px; /* Ajusta el relleno (padding) vertical según tus necesidades */
     font-size: 20px;
-    width: 100%;
+    width: 90%;
     
 }
 textarea {
-    width: 100%; /* Ancho del textarea en un 80% del contenedor */
+    width: 90%; /* Ancho del textarea en un 80% del contenedor */
     height: 8em; /* Altura del textarea en 10 ems */
 }
 
