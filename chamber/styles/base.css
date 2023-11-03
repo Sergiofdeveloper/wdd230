@@ -349,7 +349,7 @@ main .container-form{
 } 
 
 .benefits-column  {
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -398,7 +398,7 @@ form .submitBtn{
     
 }
 textarea {
-    width: 80%; /* Ancho del textarea en un 80% del contenedor */
+    width: 100%; /* Ancho del textarea en un 80% del contenedor */
     height: 8em; /* Altura del textarea en 10 ems */
 }
 
