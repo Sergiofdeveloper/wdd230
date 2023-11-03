@@ -380,6 +380,7 @@ form label.sbs{
     display: block;
     padding: .75rem 0;
     color: #555;
+    font-size: 18px;
 }
  
 form .submitBtn{
