@@ -310,6 +310,81 @@ footer {
 .image-gallery .image img:hover {
     opacity: 0.7;  
 }
+/* STYLES JOIN FORM */
+main .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide en dos columnas de igual ancho */
+    grid-gap: 20px; /* Espacio entre las columnas */
+    
+  }
+
+fieldset {
+     
+    max-width: 100%; /* Adjust the width as needed */
+    float: left; /* Float the form to the left in smaller views */
+    margin-right: 20px; /* Add some spacing between form and benefits in larger views */  
+    margin-left: 200px;
+    background-color: #fbefee;
+    margin-top: 50px;
+}
+
+.benefits-container {
+    max-width: 40%; 
+    background-color: #fbefee;
+    padding: 20px;
+    margin-top: 50px;
+}
+.benefits-container h2 {
+    color: #a02c32;
+    border-bottom: 2px solid #a02c32; /* Línea de subrayado */
+    padding-bottom: 10px; /* Espacio entre el texto y la línea de subrayado */
+  }
+
+  .benefits-container h2::before,
+  .benefits-container h2::after {
+    content: "\2605"; /* Código Unicode de una estrella dorada */
+    color: gold;  
+    margin: 0 10px;  
+  }
+legend{
+    color: #a02c32;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+    font-size: 22px;
+    font-weight: bold;
+}
+form label.top{
+    display: block;
+    padding-top: 1rem;
+    color: #a92306;
+    font-size: .9rem;
+}
+
+form label.sbs{
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+ 
+form .submitBtn{
+    border:none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin-top: 30px;
+    width: 96%;
+    max-width: 20rem;
+}
+input{
+    padding: 8px; /* Ajusta el relleno (padding) vertical según tus necesidades */
+    font-size: 20px;
+    
+}
+textarea {
+    width: 90%; /* Ancho del textarea en un 80% del contenedor */
+    height: 8em; /* Altura del textarea en 10 ems */
+}
 
 
 /* STYLES FOR MEDIA*/
@@ -386,8 +461,18 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+.form-container {
+    float: left; /* Float the form to the left in larger views */
+    margin-right: 20px; /* Add some spacing between form and benefits */
+}
 
-/* Estilos para la versión móvil */
+.benefits-container {
+    width: calc(100% - 420px); /* Adjust the width of the benefits container based on the form width and margin */
+    float: right; /* Float the benefits container to the right */
+}
+
+
+/* ESTILOS VERSION MOVIl */
 @media screen and (max-width: 768px) {
     header {
       display: flex;

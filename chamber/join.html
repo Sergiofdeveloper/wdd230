@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Zaragoza Chamber of Commerce - Your gateway to local business and community information.">
+        <meta name="author" content="Sergio Flores">  
+        <title>ZARAGOZA CHAMBER OF COMMERCE</title>
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">  
+        <meta property="og:title" content="ZARAGOZA CHAMBER OF COMMERCE">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://sergiofdeveloper.github.io/wdd230/chamber/index.html">  
+        <meta property="og:image" content="https://sergiofdeveloper.github.io/wdd230/chamber/images/chamber-of-commerce.jpg">  
+        <meta property="og:description" content="Zaragoza Chamber of Commerce">  
+    </head>
+    <body>
+        <div id="content-wrapper">
+        <header>
+            <div class="menu-switch ">
+                <label class="switch">
+                    <input type="checkbox" id="menuToggle">
+                    <span class="slider round"></span>
+                </label>
+            </div> 
+            <button id="hamburger">&#8801;</button>
+            <div class="logo">
+                    <img src="images/logo.webp" alt="Zaragoza Chamber of Commerce">
+            </div>
+            <div class="header-content"> 
+                <h1>ZARAGOZA CHAMBER OF COMMERCE</h1>
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="#">Directory</a></li>
+                        <li><a href="#">Join</a></li>
+                    </ul>
+                    
+                </nav>
+            </div>
+        </header>
+        <main class="container">
+            <fieldset>
+                <legend>JOIN THE CHAMBER</legend>
+                <form action="thankyou.html" method="get">
+                    <label class="top" for="firstName">First Name*</label>
+                    <input type="text" id="firstName" name="firstName" required>
+            
+                    <label class="top" for="lastName">Last Name*</label>
+                    <input type="text" id="lastName" name="lastName" required>
+            
+                    <label class="top" for="position">Title/Position</label>
+                    <input type="text" id="position" name="position" pattern="[A-Za-z -]{7,}" title="Enter a valid title or position (at least 7 characters)." >
+            
+                    <label class="top" for="email">Email*</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+            
+                    <label class="top"for="mobile">Mobile Phone Number:</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+            
+                    <label class="top" for="organization">Business/Organization Name:</label>
+                    <input type="text" id="organization" name="organization" required>
+            
+                    <label class="top" for="membership">Membership Level</label>
+                    
+                        <label class="sbs"><input type="radio" name="membership" value="np"> NP Membership (Non-Profit)</label>
+                        <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                        <label class="sbs"><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                        <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                    
+                    <label class="top" for="description">Business/Organization Description:</label>
+                    <textarea id="description" name="description"></textarea>
+            
+                    <input type="hidden" id="timestamp" name="timestamp">
+                    <button type="submit" class="submitBtn">Join us</button>
+                </form>
+            </fieldset>
+            <div class="benefits-container">
+                <h2>MEMBERSHIP BENEFITS</h2>
+                <div class="benefits-column">
+                    <h3>NP Membership (Non-Profit)  ---- FREE---- </h3>
+                    <ul>
+                        <li>Special Events</li>
+                        <li>Training</li>
+                    </ul>
+                </div>
+                <div class="benefits-column">
+                    <h3>Bronze Membership  ---- $150 per year ----</h3>
+                    <ul>
+                        <li>Special Events</li>
+                        <li>Training</li>
+                        <li>Advertising on Home Page</li>
+                        <li>Event Discounts</li>
+                    </ul>
+                </div>
+                <div class="benefits-column">
+                    <h3>Silver Membership ---- $300 per year ----</h3>
+                    <ul>
+                        <li>Special Events</li>
+                        <li>Training</li>
+                        <li>Advertising on Home Page</li>
+                        <li>Event Discounts</li>
+                        <li>Legal Counsel</li>
+                    </ul>
+                </div>
+                <div class="benefits-column">
+                    <h3>Gold Membership ---- $1000 per year ----</h3>
+                    <ul>
+                        <li>Special Events</li>
+                        <li>Training</li>
+                        <li>Advertising on Home Page</li>
+                        <li>Event Discounts</li>
+                        <li>Legal Counsel</li>
+                        <li>Goverment Advocacy</li>
+                        <li>Business Mentoring</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div> 
+        <!-- <footer>
+            <div class="development-info">
+                <p>@2023 Zaragoza Chamber of Commerce</p>
+                <p>Sergio Flores</p> 
+                <p>WDD 230 Project</p>
+                <p>Last Modified: <span id="last-modified"></span></p>
+            </div>
+            <script src="scripts/last-modified.js"></script>
+        </footer> -->
+        <script src="scripts/hamburger-menu.js"></script>
+        <script src="scripts/dark-mode.js"></script>
+        <script src="scripts/windchills.js"></script>
+        <script src="scripts/timestamp.js"></script>
+    
+    </body>
+</html>
