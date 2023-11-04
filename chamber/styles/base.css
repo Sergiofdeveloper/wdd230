@@ -360,7 +360,39 @@ main .container-form{
     content: "\2605"; /* Código Unicode de una estrella dorada */
     color: gold;  
     margin: 0 10px;  
-  }
+}
+.benefits-container ul {
+    list-style-type: none; /* Elimina los puntos de la lista no ordenada */
+}
+.benefits-container li::before {
+    content: "\2713"; /* Código Unicode de un icono de verificación (check) */
+    color: #07a247;  
+    margin-right: 5px;  
+}
+.benefits-container h3.np-membership::before {
+    content: "●"; /* Utiliza el carácter de un círculo (●) */
+    color: rgb(255, 7, 7); /* Cambia el color del círculo si lo deseas */
+    margin-right: 5px; /* Añade un espacio entre el círculo y el texto del <h3> */
+}
+
+.benefits-container h3.bronze-membership::before {
+    content: "●";
+    color: #cd7f32; 
+    margin-right: 5px;
+}
+
+.benefits-container h3.silver-membership::before {
+    content: "●";
+    color: silver; /* Puedes cambiar el color */
+    margin-right: 5px;
+}
+
+.benefits-container h3.gold-membership::before {
+    content: "●";
+    color: #FFD700; /* Puedes usar códigos de color personalizados */
+    margin-right: 5px;
+}
+
 legend{
     color: #a02c32;
     margin: 0 1rem;
