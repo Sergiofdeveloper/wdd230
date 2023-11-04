@@ -231,7 +231,9 @@ main {
     flex-grow: 1; /* Hace que los spotlights ocupen el espacio disponible */
     min-width: 0; /* Permite que los spotlights se reduzcan si el contenido es más estrecho */
 }
-
+.thankyou-message {
+    text-align: center;
+}
 footer {
     background-color: #a02c32;  
     color: #fff;  
