@@ -319,7 +319,7 @@ header img {
 }
 
 nav {
-    width: 100%;  
+    max-width: 100%;  
     text-align: center;     
 }
 
@@ -328,6 +328,7 @@ nav ul {
     padding: 0;
     display: flex;
     margin: 0;
+    
 }
     
 nav li {
@@ -335,6 +336,7 @@ nav li {
     margin-bottom: 10px;
     height: auto;
     line-height: 20px;
+    
 }
 nav a {
     text-decoration: none;
@@ -381,6 +383,15 @@ h2 {
 .card-information {
   order: 2;
 }
+
+header,
+  nav,
+  main,
+  .information,
+  iframe,
+  footer {
+    max-width: 100%; /* Establece el ancho máximo al 100% del ancho de la pantalla */
+  }
 
 }  
   /*----------------MEDIA SCREEN MIN-WIDTH 786PX version pc-----------------*/ 
