@@ -238,7 +238,7 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
-/* STYLES FOR DISCOVERY PAGE */
+/* --------------------STYLES FOR DISCOVERY PAGE---------------- */
 .flex-container {
     display: flex;  
     flex-wrap: wrap;  
@@ -313,14 +313,14 @@ footer {
 /* ----------STYLES JOIN FORM ---------------------*/
 .centered-content {
     display: flex;
-    justify-content: center; /* Centra horizontalmente el contenido */
-    align-items: center; /* Centra verticalmente el contenido (opcional) */
+    justify-content: center; 
+    align-items: center;  
     
 }
 main .container-form{
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Divide en dos columnas de igual ancho */
-    justify-content: center; /* Centra los elementos horizontalmente */ 
+    grid-template-columns: 1fr 1fr; 
+    justify-content: center;  
     
 }
 .form-fieldset {
@@ -400,18 +400,18 @@ form .submitBtn:hover {
 }
 
 .input-text{
-    padding: 8px; /* Ajusta el relleno (padding) vertical según tus necesidades */
+    padding: 8px; 
     font-size: 20px;
     width: 90%;
     
 }
 textarea {
     width: 90%; /* Ancho del textarea en un 80% del contenedor */
-    height: 8em; /* Altura del textarea en 10 ems */
+    height: 8em;  
 }
 
 
-/* STYLES FOR MEDIA MIN-WIDTH 769PX */
+/* --------STYLES FOR MEDIA MIN-WIDTH------- 769PX */
 
 @media screen and (min-width: 769px) {
     nav ul {
@@ -494,7 +494,7 @@ input:checked + .slider:before {
 }
 
 
-/* ESTILOS VERSION MOVIl MAX-WIDTH 768 */
+/* ------ESTILOS VERSION MOVIl MAX-WIDTH------ 768 */
 @media screen and (max-width: 768px) {
     header {
       display: flex;
@@ -587,6 +587,24 @@ input:checked + .slider:before {
     .main .container-form {
         display: block;  
     }
+        .form-fieldset,
+        .benefits-container {
+            max-width: 100%;  
+            margin: 0; /* Eliminar el margen para llenar completamente el ancho de la pantalla */
+        }
     
+        .form-fieldset {
+            padding: 20px;   
+            margin-bottom: 30px;
+        }
+    
+        .benefits-container img {
+            max-width: 100%;  
+            width: 100%; /*  imagen ocupa el ancho completo */
+        }
+    
+        .benefits-column {
+            padding: 20px; 
+        }
   }
   
