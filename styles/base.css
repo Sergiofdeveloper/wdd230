@@ -124,10 +124,6 @@
   max-width: 100%;
 }
  
-  .card-wrapper .card {
-    flex: 1;
-    max-width: calc(50% - 15px);
-}
     
   .card {
     border: 1px solid #ccc;
@@ -170,17 +166,6 @@
     position: relative; 
     margin: 0 auto;  
     text-align: center;
-  }
-   
-  .information {
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 0px;
-    width: 200px;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
-
- 
-
   }
   .information p {
     text-align: center; 
@@ -313,59 +298,120 @@ form label.top input[type="range"]::after {
 }
 
 
-/*----------------MEDIA SCREEN-----------------*/
+/*----------------MEDIA SCREEN version movil-----------------*/
   @media screen and (max-width: 767px) {
     
-    header {
-      width: 100%;   
-      padding: 10px;  
-      text-align: center;
-    }
+header {
+    width: 100%;   
+    padding: 10px;  
+    text-align: center;
+}
   
-    header h1 {
-      font-size: 1.5rem;  
-      margin-left: 0;  
-      text-align: center;
-    }
+header h1 {
+    font-size: 1.5rem;  
+    margin-left: 0;  
+    text-align: center;
+}
   
-    header img {
-      max-width: 100px;  
-      padding-left: 50px;  
-    }
-    nav {
-      width: 100%;  
-      text-align: center;     
-    }
-    nav ul {
-      display: none;
-      padding: 10px 0;
-      visibility: hidden;
-    }
-    
-    nav li {
-      
-      font-size:18px;
-      margin-bottom: 10px;
-      height: auto;
-    }
-    
-    main {
-      grid-template-columns: 1fr; 
-      padding: 10px;
-    }
+header img {
+    max-width: 100px;  
+    padding-left: 50px;  
+}
 
-    .image-label {
-      font-size: 14px;
-  }
-    h2 {
-      text-align: center;
+nav {
+    width: 100%;  
+    text-align: center;     
+}
 
-    }
-    .card {
-      padding: 10px;
-    }
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
     
+nav li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    height: auto;
+    line-height: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 10px;
+    display: block;
+    text-align: center;
+}
+nav a:hover::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #c2f607;
+}
+    
+main {
+  display: flex; /* Cambia de grid a flex para que los elementos se apilen verticalmente */
+  flex-direction: column;
+  padding: 10px;
+}
+
+.image-label {
+    font-size: 14px;
+}
+
+h2 {
+    text-align: center;
+
+}
+.card {
+    padding: 10px;
+    width: 100%
+}
+.card-wrapper {
+  flex-direction: column; /* Apila los elementos verticalmente */
+}
+
+.card, .card-information {
+  order: 1;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.card-information {
+  order: 2;
+}
+
+}  
+  /*----------------MEDIA SCREEN MIN-WIDTH 786PX version pc-----------------*/ 
+@media screen and (min-width: 768px) {
+  #hamburger {
+        display: none;
   }
+  .card-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de igual ancho */
+    gap: 30px; /* Espacio entre las columnas */
+  }
+
+  .card {
+    /* Puedes mantener los estilos existentes de las tarjetas */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  .card-information {
+    /* Estilos para la columna de información (ajusta según tus necesidades) */
+    grid-column: 2 / 3; /* Ocupa la segunda columna */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+  }
+}
+ 
   
   
   
