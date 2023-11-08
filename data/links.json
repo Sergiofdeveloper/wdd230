@@ -4,7 +4,7 @@
         "lesson": "01",
         "links": [
           {
-            "url": "images/combinators.webp",
+            "url": "/images/combinators.webp",
             "title": "Combinators"
           }
           
@@ -28,7 +28,7 @@
             "title": "Hamburger Menu"
           },
           {
-            "url":"lesson03/lazyload.html",
+            "url":"/lesson03/lazyload.html",
             "title":"Lazy Loading Demonstration"
           }
 
