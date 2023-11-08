@@ -131,6 +131,7 @@
     padding: 0px;
     max-width: 100%;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3);
+    text-align: left; 
 
   }
   
@@ -150,11 +151,14 @@
     align-items: center;  
     justify-content: center;  
   }
-  
+  .card h3 {
+    margin-left: 10px; /* Alineación a la izquierda */
+  }
   
   .card ul {
     list-style-type: decimal; 
-    padding-left: 40px;;
+    padding-left: 20px;
+    margin: 0;
   }
   
   .card ul li {

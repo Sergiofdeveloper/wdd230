@@ -95,25 +95,9 @@
             "title": "Form Build"
             }
         ] 
-        }, 
-        {
-        "lesson": "10",
-        "links": [
-            {
-            "url": "https://codepen.io/Sergiofdeveloper/pen/bGOMBOM",
-            "title": "Hamburger Menu"
-            }
-        ] 
-        },
-        {
-        "lesson": "11",
-        "links": [
-            {
-            "url": "https://codepen.io/Sergiofdeveloper/pen/bGOMBOM",
-            "title": "Hamburger Menu"
-            }
-        ] 
         }
+        
+        
     ]
 }     
     
