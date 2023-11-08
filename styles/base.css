@@ -107,7 +107,7 @@
 }
 .image-label {
     position: absolute;
-    bottom: 220px;
+    bottom: 50px;
     left: 20%;  
     transform: translateX(-50%); /* Centrar el texto horizontalmente */
     background-color: rgba(0, 0, 0, 0.7);
