@@ -26,24 +26,24 @@ async function getLinks() {
 // Función para construir los enlaces de actividades a partir de los datos
 function displayLinks(data) {
     const lessons = data.lessons;
-  const activityContainer = document.querySelector(".activity-container");
+    const activityList = document.getElementById("activity-list");
 
   lessons.forEach((lesson) => {
     const lessonTitle = document.createElement("h3");
     lessonTitle.textContent = `Lesson ${lesson.lesson}`;
-    activityContainer.appendChild(lessonTitle);
+    activityList.appendChild(lessonTitle)
 
     const ul = document.createElement("ul");
     lesson.links.forEach((link) => {
       const li = document.createElement("li");
       const a = document.createElement("a");
-      a.href = link.url;
+      a.href = `${baseURL}${link.url}`;
       a.textContent = link.title;
       li.appendChild(a);
       ul.appendChild(li);
     });
 
-    activityContainer.appendChild(ul);
+    activityList.appendChild(ul);
   });
 }
 
