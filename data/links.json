@@ -1,0 +1,121 @@
+{
+    "lessons": [
+      {
+        "lesson": "01",
+        "links": [
+          {
+            "url": "images/combinators.webp",
+            "title": "Combinators"
+          }
+          
+        ]
+      },
+      {
+        "lesson": "02",
+        "links": [
+          {
+            "url": "https://codepen.io/Sergiofdeveloper/pen/xxmWzoO",
+            "title": "CSS Pseudo Elements"
+          }
+          
+        ]
+      },
+      {
+        "lesson": "03",
+        "links": [
+          {
+            "url": "https://codepen.io/Sergiofdeveloper/pen/bGOMBOM",
+            "title": "Hamburger Menu"
+          },
+          {
+            "url":"lesson03/lazyload.html",
+            "title":"Lazy Loading Demonstration"
+          }
+
+        ] 
+        },
+        {
+        "lesson": "04",
+        "links": [
+            {
+            "url": "https://codepen.io/Sergiofdeveloper/pen/poqORmG",
+            "title": "Pseudo-Class Fun"
+            }
+        ] 
+        },
+        {
+        "lesson": "05",
+        "links": [
+            {
+            "url": "images/landscape.webp",
+            "title": "Webp"
+            },
+            {
+            "url": "lesson05/new-ward-members.json",
+            "title": "JSON File"
+            },
+            {
+            "url": "lesson05/prophets.html",
+            "title": "Latter-Day Prophets"
+            }
+        ] 
+        },
+        {
+        "lesson": "06",
+        "links": [
+            {
+            "url": "lesson06/responsive-images.html",
+            "title": "Responsive-images"
+            }
+        ] 
+        },
+        {
+        "lesson": "07",
+        "links": [
+            {
+            "url": "lesson07/bom.html",
+            "title": "Book of Mormon Chapter List"
+            }
+        ] 
+        },
+        {
+        "lesson": "08",
+        "links": [
+            {
+            "url": "lesson08/tablebuild.html",
+            "title": "HTML Table"
+            }
+        ] 
+        },
+        {
+        "lesson": "09",
+        "links": [
+            {
+            "url": "form/index.html",
+            "title": "Form Build"
+            }
+        ] 
+        }, 
+        {
+        "lesson": "10",
+        "links": [
+            {
+            "url": "https://codepen.io/Sergiofdeveloper/pen/bGOMBOM",
+            "title": "Hamburger Menu"
+            }
+        ] 
+        },
+        {
+        "lesson": "11",
+        "links": [
+            {
+            "url": "https://codepen.io/Sergiofdeveloper/pen/bGOMBOM",
+            "title": "Hamburger Menu"
+            }
+        ] 
+        }
+    ]
+}     
+    
+ 
+  
