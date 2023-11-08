@@ -29,7 +29,7 @@ function displayLinks(data) {
     const activityList = document.getElementById("activity-list");
 
   lessons.forEach((lesson) => {
-    const lessonTitle = document.createElement("h3");
+    const lessonTitle = document.createElement("h2");
     lessonTitle.textContent = `Lesson ${lesson.lesson}`;
     activityList.appendChild(lessonTitle)
 
