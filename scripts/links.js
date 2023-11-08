@@ -1,4 +1,4 @@
-const baseURL = "https://sergiofdeveloper.github.io/wdd230/";
+
 // Definir la URL del archivo JSON
 const linksURL = "https://sergiofdeveloper.github.io/wdd230/data/links.json";
 
@@ -37,7 +37,7 @@ function displayLinks(data) {
     lesson.links.forEach((link) => {
       const li = document.createElement("li");
       const a = document.createElement("a");
-      a.href = `${baseURL}${link.url}`;
+      a.href = `${link.url}`;
       a.textContent = link.title;
       li.appendChild(a);
       ul.appendChild(li);
