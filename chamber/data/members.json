@@ -1,0 +1,68 @@
+{
+    "companies": [
+      {
+        "name": "Ferrovial",
+        "address": "Principe de Vergara 135, Madrid",
+        "phone": "+34 91 586 25 00",
+        "website": "https://www.ferrovial.com/es-es/",
+        "image": "ferrovial.webp",
+        "membership_level": "Gold",
+        "other_information": "one of the world's leading groups in sustainable infrastructure."
+      },
+      {
+        "name": "Iberdrola",
+        "address": "Plaza Euskadi 5, Bibao",
+        "phone": "+34 91 784 32 32",
+        "website": "https://www.iberdrola.com/",
+        "image": "iberdrola.webp ",
+        "membership_level": "Gold",
+        "other_information": "Iberdrola is a global leader in clean energy, networks and storage."
+      },
+      {
+        "name": "Caravan Fragancias",
+        "address": "Pol. Ind. Malpica 66, Zaragoza",
+        "phone": "+34 902 110 795",
+        "website": "https://www.caravanfragancias.es/",
+        "image": "caravan.webp",
+        "membership_level": "Silver",
+        "other_information": "company with extensive experience specialized in the development and marketing of perfumery products.."
+      },
+      {
+        "name": "CAF Construction and Railway Auxiliary",
+        "address": "Jose Miguel Iturrioz 26, Beasain",
+        "phone": "+34 943 88 01 00",
+        "website": "https://www.caf.net/es",
+        "image": "caf.wepb",
+        "membership_level": "Silver",
+        "other_information": "one of the international leaders in comprehensive sustainable mobility systems."
+      },
+      {
+        "name": "Zalba-Caldu Aon Iberia",
+        "address": "Pol. La Casaza 1, Utebo",
+        "phone": "+34 976 37 37 38",
+        "website": "http://www.zalba-caldu.com",
+        "image": "Zalba-Caldu.webp",
+        "membership_level": "Bronze",
+        "other_information": "Leading brokerage in caravanning, camping and classic vehicles since 1985."
+      },
+      {
+        "name": "Innovart Construccion",
+        "address": "Ponent 24, Lleida",
+        "phone": "+34 691 689 859",
+        "website": "https://innovartesculturas.com/",
+        "image": "innovart.wepb",
+        "membership_level": "Bronze",
+        "other_information": "Partial renovations of individual elements such as housing construction, as well as artistic restoration and bio-construction.."
+      },
+      {
+        "name": "Fundacion Banco de alimentos .",
+        "address": "Carretera Cogullada 65, Zaragoza",
+        "phone": "+34 976 73 71 36",
+        "website": "https://bancodealimentosdezaragoza.es/",
+        "image": "banco-alimentos.wepb",
+        "membership_level": "NP",
+        "other_information": "Non-profit foundation based on non-denominational and apolitical volunteerism."
+      }
+    ]
+  }
+  

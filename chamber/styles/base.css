@@ -443,6 +443,59 @@ textarea {
     width: 90%; /* Ancho del textarea en un 80% del contenedor */
     height: 8em;  
 }
+/*---------STYLES FOR DIRECTORY PAGE-------------------*/
+/* Styles for grid view */
+#members-display.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.company-card {
+    background-color: #fbefee;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.company-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles for list view */
+#members-display.list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+  .company-card {
+    margin-bottom: 20px
+}
+
+.company-card h3 {
+    margin-top: 10px;
+}
+
+/* Toggle between grid and list view styles */
+#members-display.list {
+    display: none;
+}
+
+/* Media query to switch styles based on screen width */
+@media screen and (max-width: 768px) {
+    #members-display.grid, #members-display.list {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    .company-card {
+        margin-bottom: 20px;
+    }
+  
+    #members-display.list .company-card {
+        text-align: center;
+    }
+}
 
 
 /* --------STYLES FOR MEDIA MIN-WIDTH------- 769PX */
