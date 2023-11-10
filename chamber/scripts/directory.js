@@ -55,6 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
             .catch((error) => console.error("Error fetching JSON:", error));
     }
   
-    // Llamar a la función para cargar y mostrar la información de los miembros
+    
     loadMembersData();
 });
