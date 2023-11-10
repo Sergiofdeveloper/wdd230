@@ -452,8 +452,8 @@ textarea {
 }
 
 .company-card {
-  background-color: #fffafa; /* Fondo blanco para las tarjetas */
-  border-radius: 10px; /* Esquinas redondeadas */
+  background-color: #fffafa;  
+  border-radius: 10px;  
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
   overflow: hidden; /* Evita que la sombra se desborde */
   transition: box-shadow 0.3s ease; /* Transición suave de la sombra */
