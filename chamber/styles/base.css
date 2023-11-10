@@ -452,51 +452,56 @@ textarea {
 }
 
 .company-card {
-    background-color: #fbefee;
-    padding: 20px;
-    text-align: center;
-    font-size: 0.8rem;
+  background-color: #fffafa; /* Fondo blanco para las tarjetas */
+  border-radius: 10px; /* Esquinas redondeadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  overflow: hidden; /* Evita que la sombra se desborde */
+  transition: box-shadow 0.3s ease; /* Transición suave de la sombra */
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
+.company-card p {
+    margin: 0;  
+    font-size: 14px; 
+}
+.company-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el cursor */
+    transition: box-shadow 0.3s ease; /* Transición suave de la sombra en hover */
+  }
 
 .company-card img {
     max-width: 100%;
     height: auto;
 }
-
-/* Styles for list view */
-#members-display.list {
+.company-card strong {
+    display: none; /* Oculta los elementos <strong> dentro de company-card */
+  }
+  #members-display.list {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-}
-  .company-card {
-    margin-bottom: 20px
-}
-
-.company-card h3 {
-    margin-top: 10px;
-}
-
-/* Toggle between grid and list view styles */
-#members-display.list {
-    display: none;
+    align-items: center;
+} 
+#members-display.list .company-card {
+    text-align: left;  
+    width: 300px;   
+    height: 75px;
+    margin: 0 auto;  
+    margin-bottom: 20px;  
+    padding-left: 20px;
+    padding-top: 10px;
 }
 
-/* Media query to switch styles based on screen width */
-@media screen and (max-width: 768px) {
-    #members-display.grid, #members-display.list {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
-
-    .company-card {
-        margin-bottom: 20px;
-    }
-  
-    #members-display.list .company-card {
-        text-align: center;
-    }
+#members-display.list .company-card img {
+    display: none; /* Ocultar la imagen en el modo lista */
+}
+#members-display.list .company-card:nth-child(odd) {
+    background-color: #f9e4e4;  
 }
 
+#members-display.list .company-card:nth-child(even) {
+    background-color: #fcf4f4; 
+}
 
 /* --------STYLES FOR MEDIA MIN-WIDTH------- 769PX */
 
@@ -692,6 +697,18 @@ input:checked + .slider:before {
     
         .benefits-column {
             padding: 20px; 
+        }
+
+        #members-display.grid, #members-display.list {
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
+    
+        .company-card {
+            margin-bottom: 20px;
+        }
+      
+        #members-display.list .company-card {
+            text-align: center;
         }
   }
   
