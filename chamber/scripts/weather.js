@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
             descriptionElement.textContent = `Current Weather: ${capitalizeWords(data.weather[0].description)}`;
 
             // Updating the weather icon
-            weatherIconElement.src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+            weatherIconElement.src = "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
             weatherIconElement.alt = capitalizeWords(data.weather[0].description);
 
             // Fetch three-day forecast data
