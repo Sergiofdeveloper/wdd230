@@ -45,8 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
             descriptionElement.textContent = `Current Weather: ${capitalizeWords(data.weather[0].description)}`;
 
             // Updating the weather icon
-            const iconUrl = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-            weatherIconElement.src = iconUrl;
+            weatherIconElement.src = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
             weatherIconElement.alt = capitalizeWords(data.weather[0].description);
 
             // Fetch three-day forecast data
@@ -67,8 +66,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const temperature = parseFloat(temperatureElement.textContent);
             const windSpeed = parseFloat(windSpeedElement.textContent);
 
-            if (temperature <= 50 && windSpeed > 3.0) {
-                const windChill = 35.74 + 0.6215 * temperature - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temperature * Math.pow(windSpeed, 0.16);
+            if (temperature <= 10 && windSpeed > 1.5) {
+                const windChill = 13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16);
                 windChillElement.textContent = `${windChill.toFixed(2)}°C`;
             } else {
                 windChillElement.textContent = "N/A";
