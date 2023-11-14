@@ -126,7 +126,7 @@ main {
 
 .banner{
     display: none;
-    background: linear-gradient(to right, #df6a68, #e4b1ab); /* Degradado de color */
+    background: linear-gradient(to right, #a02c32, #e39695); /* Degradado de color */
     color: #ffffff;
     padding: 20px;
     text-align: center; 
@@ -134,6 +134,7 @@ main {
     margin-bottom: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     animation: fadeIn 3s ease-out;  
+   
 }
 
 @keyframes fadeIn {
@@ -144,6 +145,7 @@ main {
         opacity: 1;
     }
 }
+
 .banner-content {
     display: flex;
     justify-content: space-between;
