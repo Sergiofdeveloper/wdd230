@@ -1,72 +1,78 @@
-const apiKey = 'ae5b4837b97484434881ec52071a552a'; // Replace with your OpenWeatherMap API key
-const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=Zaragoza&appid=${apiKey}&units=imperial`;
-const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=Zaragoza&appid=${apiKey}&units=imperial`;
+document.addEventListener('DOMContentLoaded', function () {
+    const apiKey = 'ae5b4837b97484434881ec52071a552a';
+    const latitude = 41.6221;
+    const longitude = -0.8716;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
 
-function capitalizeWords(str) {
-    return str.replace(/\b\w/g, match => match.toUpperCase());
-}
-// Function to fetch weather data from the API
-async function fetchWeather() {
-    try {
-        // Fetch current weather
-        const responseWeather = await fetch(weatherUrl);
-        const dataWeather = await responseWeather.json();
+    const temperatureElement = document.getElementById('temperature');
+    const descriptionElement = document.getElementById('weather-description');
+    const weatherIconElement = document.getElementById('weather-icon');
+    const windSpeedElement = document.getElementById('wind-speed');
+    const windChillElement = document.getElementById('wind-chill');
 
-        // Fetch 3-hour forecast data
-        const responseForecast = await fetch(forecastUrl);
-        const dataForecast = await responseForecast.json();
+    function capitalizeWords(str) {
+        return str.replace(/\b\w/g, char => char.toUpperCase());
+    }
 
-        // Update the temperature, weather description, and wind speed
-        temperatureElement.textContent = dataWeather.main.temp.toFixed(2);
-        const capitalizedWeatherDescription = capitalizeWords(dataWeather.weather[0].description);
-        document.getElementById("weather-description").textContent = capitalizedWeatherDescription;
-        windSpeedElement.textContent = dataWeather.wind.speed.toFixed(2);
+    // Function to update the forecast
+    function updateForecast(forecastData) {
+        const forecastContainer = document.getElementById('forecast-container');
 
-        // Update the weather icon
-        const weatherIcon = document.getElementById("weather-icon");
-        weatherIcon.src = `https://openweathermap.org/img/wn/${dataWeather.weather[0].icon}.png`;
-        weatherIcon.alt = dataWeather.weather[0].description;
+        // Filter the forecast data to get only one reading per day at 12:00 PM
+        const dailyForecast = forecastData.filter(entry => entry.dt_txt.includes('12:00:00'));
 
-        // Update the wind chill
-        const temperature = parseFloat(temperatureElement.textContent);
-        const windSpeed = parseFloat(windSpeedElement.textContent);
+        // Display the forecast for the next three days
+        for (let i = 0; i < 3; i++) {
+            const day = dailyForecast[i];
+            if (!day) break; // Break if there is no forecast data for the next three days
 
-        if (temperature <= 50 && windSpeed > 3.0) {
-            const windChill = 35.74 + 0.6215 * temperature - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temperature * Math.pow(windSpeed, 0.16);
-            windChillElement.textContent = windChill.toFixed(2) + "°F";
-        } else {
-            windChillElement.textContent = "N/A";
+            const date = new Date(day.dt * 1000);
+            const dayOfWeek = date.toLocaleDateString('en-US', { weekday: 'long' });
+
+            const forecastItem = document.createElement('div');
+            forecastItem.classList.add('forecast-item');
+            forecastItem.innerHTML = `<p>${dayOfWeek}</p><p>${day.main.temp.toFixed(2)}°C</p>`;
+
+            forecastContainer.appendChild(forecastItem);
         }
-
-        // Update the three-day forecast
-        updateForecast(dataForecast.list);
-
-    } catch (error) {
-        console.error("Error fetching weather data:", error);
     }
-}
 
-function updateForecast(forecastData) {
-    const forecastContainer = document.getElementById("forecast-container");
+    // Fetching data from OpenWeatherMap
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            temperatureElement.textContent = `${data.main.temp.toFixed(2)}°C`;
+            descriptionElement.textContent = `Current Weather: ${capitalizeWords(data.weather[0].description)}`;
 
-    // Filter the forecast data to get only one reading per day at 12:00 PM
-    const dailyForecast = forecastData.filter(entry => entry.dt_txt.includes("12:00:00"));
+            // Updating the weather icon
+            const iconUrl = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+            weatherIconElement.src = iconUrl;
+            weatherIconElement.alt = capitalizeWords(data.weather[0].description);
 
-    // Display the forecast for the next three days
-    for (let i = 0; i < 3; i++) {
-        const day = dailyForecast[i];
-        if (!day) break; // Break if there is no forecast data for the next three days
+            // Fetch three-day forecast data
+            const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
 
-        const date = new Date(day.dt * 1000);
-        const dayOfWeek = date.toLocaleDateString('en-US', { weekday: 'long' });
+            fetch(forecastUrl)
+                .then(response => response.json())
+                .then(forecastData => {
+                    // Call the function to update the forecast
+                    updateForecast(forecastData.list);
+                })
+                .catch(error => console.error('Error fetching forecast data:', error));
 
-        const forecastItem = document.createElement("div");
-        forecastItem.classList.add("forecast-item");
-        forecastItem.innerHTML = `<p>${dayOfWeek}</p><p>${day.main.temp.toFixed(2)}°F</p>`;
+            // Update wind-related elements
+            windSpeedElement.textContent = `${data.wind.speed.toFixed(2)} m/s`;
 
-        forecastContainer.appendChild(forecastItem);
-    }
-}
+            // Update the wind chill using the existing logic
+            const temperature = parseFloat(temperatureElement.textContent);
+            const windSpeed = parseFloat(windSpeedElement.textContent);
 
-// Call the fetchWeather function when the page loads
-window.addEventListener("load", fetchWeather);
+            if (temperature <= 50 && windSpeed > 3.0) {
+                const windChill = 35.74 + 0.6215 * temperature - 35.75 * Math.pow(windSpeed, 0.16) + 0.4275 * temperature * Math.pow(windSpeed, 0.16);
+                windChillElement.textContent = `${windChill.toFixed(2)}°C`;
+            } else {
+                windChillElement.textContent = "N/A";
+            }
+        })
+        .catch(error => console.error('Error fetching weather data:', error));
+});
