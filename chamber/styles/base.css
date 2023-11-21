@@ -272,7 +272,7 @@ main {
     font-size: 1.2rem;
     flex-grow: 1; /* Hace que los spotlights ocupen el espacio disponible */
     min-width: 0; 
-    width: 180px;/* Permite que los spotlights se reduzcan si el contenido es más estrecho */
+    width: 180px; 
     height: 220px;
     word-wrap: break-word;
     white-space: normal;
