@@ -707,6 +707,7 @@ input:checked + .slider:before {
     .advertisement {
       margin-bottom: 10px;
       max-width: 100%;
+      width: 150px;
     }
   
     .flex-container {
