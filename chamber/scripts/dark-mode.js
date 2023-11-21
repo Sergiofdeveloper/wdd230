@@ -31,7 +31,7 @@ menuToggle.addEventListener('change', function () {
         isDarkMode = true;
     } else {
         // apagar modo oscuro
-        contentWrapper.style.backgroundColor = "#eee";
+        contentWrapper.style.backgroundColor = "#fff";
         contentWrapper.style.color = "#000";
         header.style.backgroundColor = "#a02c32";
         container.style.backgroundColor = "transparent";
@@ -40,7 +40,7 @@ menuToggle.addEventListener('change', function () {
         currentEvents.style.color = "#000";
         weatherCard.style.backgroundColor = "#fbefee";
         weatherCard.style.color = "#000";
-        cta.style.backgroundColor = "#fbefee";
+        cta.style.backgroundColor = "#fff";
         cta.style.color = "#000";
         elementsToApplyDarkMode.forEach((element) => {
             element.style.backgroundColor = "#fbefee";

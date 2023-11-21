@@ -7,7 +7,8 @@
         "website": "https://www.ferrovial.com/es-es/",
         "image": "ferrovial.webp",
         "membership_level": "Gold",
-        "other_information": "one of the world's leading groups in sustainable infrastructure."
+        "other_information": "'People, companies, training, development. All that and much more designed for bussinesmen.'",
+        "rating": "5"
       },
       {
         "name": "Iberdrola",
@@ -16,8 +17,10 @@
         "website": "https://www.iberdrola.com/",
         "image": "iberdrola.webp ",
         "membership_level": "Gold",
-        "other_information": "Iberdrola is a global leader in clean energy, networks and storage."
+        "other_information": "'Your service exceeded my expectations. Highly recommended.'",
+        "rating": "5"
       },
+
       {
         "name": "Caravan Fragancias",
         "address": "Pol. Ind. Malpica 66, Zaragoza",
@@ -25,8 +28,10 @@
         "website": "https://www.caravanfragancias.es/",
         "image": "caravan.webp",
         "membership_level": "Silver",
-        "other_information": "company with extensive experience specialized in the development and marketing of perfumery products."
-      },
+        "other_information": "'Professional workshops 100% recommended for both employees and unemployed'.",
+        "rating": "4"
+        },
+
       {
         "name": "CAF Construction and Railway Auxiliary",
         "address": "Jose Miguel Iturrioz 26, Beasain",
@@ -34,7 +39,8 @@
         "website": "https://www.caf.net/es",
         "image": "caf.webp",
         "membership_level": "Silver",
-        "other_information": "one of the international leaders in comprehensive sustainable mobility systems."
+        "other_information": "'Emblematic building of the chamber of commerce in Zaragoza. Old charming assembly hall,'",
+        "rating": "4"
       },
       {
         "name": "AON Classic Brokers",
@@ -42,8 +48,9 @@
         "phone": "+34 976 15 25 58",
         "website": "http://www.z-c.com",
         "image": "aon.webp",
-        "membership_level": "Bronze",
-        "other_information": "Leading brokerage in caravanning, camping and classic vehicles since 1985."
+        "membership_level": "Gold",
+        "other_information": "'Professionals always taking care of the needs of society, not only serve companies but individuals'.",
+        "rating": "5"
       },
       {
         "name": "Innovart Const.",
