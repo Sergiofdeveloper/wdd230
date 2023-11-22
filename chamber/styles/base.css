@@ -96,7 +96,14 @@ nav ul {
 nav ul li {
     margin-right: 20px;
 }
-nav ul li a:hover::after {
+nav a.active {
+    color: #e4b1ab; /* Change the color to emphasize the active link */
+    font-weight: bold; /* Optionally, make the active link bold */
+    /* Add any other styles you want for the active link */
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
     content: ""; 
     display: block;
     height: 3px; 
