@@ -4,38 +4,60 @@ body, html {
 }
 
 header {
-    background-size: cover;
-    background-position: center;
+    height: 200px;
+    background-color: #333; /* Change the background color as needed */
     color: white;
-    text-align: center;
-    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Add padding to the header content */
+}
+
+.logo img {
+    max-height: 100%;
 }
 
 .menu {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
-.menu-section {
-    width: calc(100% - 33.33%);
-}
-
-ul {
+.menu-section ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
 }
 
-ul li {
-    display: inline;
+.menu-section li {
     margin-right: 20px;
 }
 
 .social-media {
-    text-align: right;
+    display: flex;
+    align-items: center;
 }
 
-.social-media ul li {
-    display: block;
+.social-media a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    overflow: hidden; /* Hide horizontal scroll for the hero image */
+}
+
+.container picture {
+    width: 100%;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    /* Add your footer styles here */
 }
