@@ -30,7 +30,19 @@ header {
 }
 
 .menu-section li {
-    margin-right: 20px;
+    margin-right: 40px;
+}
+
+.menu-section a {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+.menu-section a:hover {
+    color: yellow;
+    text-shadow: 0 0 10px yellow; /* Adjust the shadow as needed */
 }
 
 .social-media {
@@ -42,6 +54,10 @@ header {
     margin-left: 20px;
     color: white;
     text-decoration: none;
+}
+
+.header-title {
+    margin-top: 20px; /* Adjust the margin to control the separation from the menu */
 }
 
 main {
