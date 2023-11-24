@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var menuLinks = document.querySelector('.menu-links');
 
     menuBtn.addEventListener('click', function () {
+        console.log('Botón de menú clicado');
         menuLinks.classList.toggle('show-menu');
     });
 });
