@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var menuLinks = document.querySelector('.menu-links');
 
     menuBtn.addEventListener('click', function () {
-        menuLinks.style.display = menuLinks.style.display === 'block' ? 'none' : 'block';
+        console.log('clicked');
+        menuLinks.classList.toggle('show-menu');
     });
 });
-

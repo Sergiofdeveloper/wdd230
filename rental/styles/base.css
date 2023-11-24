@@ -21,6 +21,14 @@ header {
     display: flex;
     align-items: center;
 }
+.menu-btn {
+    display: none; /* Oculta el botón de menú en la versión normal */
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    align-self: center;
+    
+}
 
 .menu-links ul {
     list-style: none;
@@ -72,19 +80,17 @@ main {
 }
 
 
- 
-
-
-
 /* For screens up to 768px width (typical mobile devices) */
 @media screen and (max-width: 768px) {
     header {
         height: 120px; /* Ajusta la altura según sea necesario */
         padding: 0 10px; /* Ajusta el relleno según sea necesario */
     }
+
     .logo img {
         max-height: 100px; /* Adjust the max height as needed */
     }
+
     .menu-links {
         display: none; /* Oculta los enlaces de menú por defecto en dispositivos móviles */
         flex-direction: column;
@@ -94,6 +100,10 @@ main {
         left: 0;
         background-color: #333;
         width: 100%;
+        z-index: 1; /* Añade z-index para que el menú aparezca sobre el contenido */
+    }
+    .menu-links.show-menu {
+        display: flex;
     }
 
     .menu-links ul {
@@ -108,20 +118,35 @@ main {
 
     .menu-links a {
         font-size: 20px; /* Further reduce the font size for smaller screens */
+        color: white; /* Añade color blanco al texto del enlace */
     }
-    .menu-btn {
-        display: block; /* Muestra el botón de menú en dispositivos móviles */
+
+    .social-media {
+        margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+        text-align: center;
     }
 
     .social-media a {
-        margin-left: 5px; /* Further reduce the margin for smaller screens */
+        display: inline-block; /* Muestra los iconos de redes sociales en línea */
+        margin: 0 5px; /* Ajusta el margen entre los iconos según sea necesario */
     }
-    
-    
+
+    .menu-btn {
+        display: block; /* Muestra el botón de menú en la versión móvil */
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        align-self: center;
+    }
+
+    .menu-btn:hover {
+        text-decoration: underline; /* Añade subrayado al pasar el ratón sobre el botón de menú */
+    }
 
     .social-media a svg {
         width: 20px; /* Adjust the width as needed */
         height: 20px; /* Adjust the height as needed */
+        fill: gold; /* Añade color dorado a los iconos de redes sociales */
     }
-
 }
+
