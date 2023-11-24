@@ -1,5 +1,16 @@
+const hamburgerButton = document.querySelector('.hamburger');
+const menuList = document.querySelector('.menu-links ul');
 
-    function toggleMenu() {
-        var menu = document.querySelector('.menu-section ul');
-        menu.style.display = (menu.style.display === 'none' || menu.style.display === '') ? 'block' : 'none';
+function toggleMenu() {
+    if (menuList.style.display === 'block' || menuList.style.display === '') {
+        menuList.style.display = 'none';
+        hamburgerButton.innerHTML = '&#9776;';
+    } else {
+        menuList.style.display = 'block';
+        hamburgerButton.innerHTML = '✕';
     }
+}
+
+hamburgerButton.addEventListener('click', toggleMenu);
+
+

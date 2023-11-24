@@ -22,25 +22,25 @@ header {
     align-items: center;
 }
 
-.menu-section ul {
+.menu-links ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
 }
 
-.menu-section li {
+.menu-links li {
     margin-right: 40px;
 }
 
-.menu-section a {
+.menu-links a {
     color: white;
     text-decoration: none;
     font-size: 40px;
     transition: color 0.3s, text-shadow 0.3s;
 }
 
-.menu-section a:hover {
+.menu-links a:hover {
     color: yellow;
     text-shadow: 0 0 10px yellow; /* Adjust the shadow as needed */
 }
@@ -56,7 +56,7 @@ header {
     text-decoration: none;
 }
 
-
+ 
 main {
     width: 100%;
     overflow: hidden; /* Hide horizontal scroll for the hero image */
@@ -71,36 +71,34 @@ main {
     height: auto;
 }
 
-footer {
-    
-}
 
  
 
-/* For screens up to 768px width (typical mobile devices) */
-/* Add this inside your existing styles or in a separate CSS file */
-.menu-toggle {
-    display: none; /* Hide the toggle button by default */
-}
+
 
 /* For screens up to 768px width (typical mobile devices) */
 @media screen and (max-width: 768px) {
-    .menu-section ul {
+    .menu-links ul {
         flex-direction: column;
         align-items: flex-end;
         display: none; /* Hide the menu items by default on small screens */
     }
 
-    .menu-toggle {
-        display: block; /* Show the toggle button on small screens */
-    }
-
-    .menu-section a {
-        font-size: 16px; /* Further reduce the font size for smaller screens */
+    .menu-links a {
+        font-size: 20px; /* Further reduce the font size for smaller screens */
     }
 
     .social-media a {
         margin-left: 5px; /* Further reduce the margin for smaller screens */
+    }
+    
+    .logo img {
+        max-height: 50px; /* Adjust the max height as needed */
+    }
+
+    .social-media a svg {
+        width: 20px; /* Adjust the width as needed */
+        height: 20px; /* Adjust the height as needed */
     }
 
 }
