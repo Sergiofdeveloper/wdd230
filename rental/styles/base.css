@@ -109,11 +109,14 @@ main {
     .menu-links ul {
         width: 100%;
         text-align: center;
+       
     }
 
     .menu-links li {
         margin-right: 0;
         margin-bottom: 10px; /* Espaciado entre enlaces de menú en dispositivos móviles */
+        font-size: 6px;
+        padding-right: 10px;
     }
 
     .menu-links a {
