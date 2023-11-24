@@ -78,23 +78,46 @@ main {
 
 /* For screens up to 768px width (typical mobile devices) */
 @media screen and (max-width: 768px) {
-    .menu-links ul {
+    header {
+        height: 120px; /* Ajusta la altura según sea necesario */
+        padding: 0 10px; /* Ajusta el relleno según sea necesario */
+    }
+    .logo img {
+        max-height: 100px; /* Adjust the max height as needed */
+    }
+    .menu-links {
+        display: none; /* Oculta los enlaces de menú por defecto en dispositivos móviles */
         flex-direction: column;
-        align-items: flex-end;
-        display: none; /* Hide the menu items by default on small screens */
+        align-items: center;
+        position: absolute;
+        top: 80px; /* Ajusta la posición de los enlaces de menú según sea necesario */
+        left: 0;
+        background-color: #333;
+        width: 100%;
+    }
+
+    .menu-links ul {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu-links li {
+        margin-right: 0;
+        margin-bottom: 10px; /* Espaciado entre enlaces de menú en dispositivos móviles */
     }
 
     .menu-links a {
         font-size: 20px; /* Further reduce the font size for smaller screens */
+    }
+    .menu-btn {
+        display: block; /* Muestra el botón de menú en dispositivos móviles */
     }
 
     .social-media a {
         margin-left: 5px; /* Further reduce the margin for smaller screens */
     }
     
-    .logo img {
-        max-height: 50px; /* Adjust the max height as needed */
-    }
+    
 
     .social-media a svg {
         width: 20px; /* Adjust the width as needed */
