@@ -673,6 +673,12 @@ input:checked + .slider:before {
     .logo {
       max-width: 90%; /* Ocupar la mayor parte del ancho disponible */
     }
+    .logo img {
+        max-width: 50%;
+        height: auto;
+        min-width: 150px;
+        content: url("https://sergiofdeveloper.github.io/wdd230/chamber/images/small-logo.png");
+      }
   
     nav ul {
       display: none; /* Inicialmente, ocultar el menú de navegación en la versión móvil */
