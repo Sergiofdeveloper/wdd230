@@ -18,9 +18,9 @@ menuToggle.addEventListener('change', function () {
         header.style.backgroundColor = "#000";
         container.style.backgroundColor = "#000";
         footer.style.backgroundColor = "#000";
-        currentEvents.style.backgroundColor = "https://sergiofdeveloper.github.io/wdd230/chamber/images/dark-mode.webp";
+        currentEvents.style.backgroundColor = "https://sergiofdeveloper.github.io/wdd230/chamber/images/dark-mode.jpg";
         currentEvents.style.color = "#fff";
-        weatherCard.style.backgroundColor = "https://sergiofdeveloper.github.io/wdd230/chamber/images/dark-mode.webp";
+        weatherCard.style.backgroundColor = "https://sergiofdeveloper.github.io/wdd230/chamber/images/dark-mode.jpg";
         weatherCard.style.color = "#fff";
         cta.style.backgroundColor = "#000";
         cta.style.color = "#fff";
