@@ -6,7 +6,9 @@ body {
 }
  
 header {
-    background-color: #a02c32;  
+    background-image:url("https://sergiofdeveloper.github.io/wdd230/chamber/images/background-logo.webp");
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el área del header */
+    background-position: center;  
     color: #fff;  
     display: flex;
     
