@@ -13,7 +13,7 @@
         selectedCompanies.forEach((company, index) => {
             const spotlightDiv = document.getElementById(`spotlight${index + 1}`);
             spotlightDiv.innerHTML = `
-                <h3>${company.name}</h3>
+                <h2>${company.name}</h2>
                 <p>${company.other_information}</p>
                 <p>Rating: ${generateStarRating(parseFloat(company.rating))}</p>
             `;
