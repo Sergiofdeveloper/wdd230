@@ -4,6 +4,7 @@ const header = document.querySelector('header');
 const container = document.querySelector('.container');
 const footer = document.querySelector('footer');
 const currentEvents = document.querySelector('.current-events');
+const events = document.querySelector('.events');
 const weatherCard = document.querySelector('.weather-card');
 const elementsToApplyDarkMode = document.querySelectorAll(
     '.company-advertisements, .advertisement'
