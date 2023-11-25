@@ -171,13 +171,14 @@ main {
     cursor: pointer;
     padding-left: 50px;
 
-
 }
 
 
 .current-events {
     flex: 2;  
-    background-color: #fbefee;
+    background-image:url("https://sergiofdeveloper.github.io/wdd230/chamber/images/background-events.jpg");
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el área del header */
+    background-position: center; 
     margin-right: 10px;
     padding-left: 20px;
     font-size: 1.2rem; 
