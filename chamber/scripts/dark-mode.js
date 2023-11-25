@@ -36,9 +36,7 @@ menuToggle.addEventListener('change', function () {
         header.style.backgroundColor = "#a02c32";
         container.style.backgroundColor = "transparent";
         footer.style.backgroundColor = "#a02c32";
-        currentEvents.style.backgroundColor = "https://sergiofdeveloper.github.io/wdd230/chamber/images/background-events.webp";
         currentEvents.style.color = "#000";
-        weatherCard.style.backgroundColor = "https://sergiofdeveloper.github.io/wdd230/chamber/images/background-events.webp";
         weatherCard.style.color = "#000";
         cta.style.backgroundColor = "#fff";
         cta.style.color = "#000";
