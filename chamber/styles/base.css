@@ -676,7 +676,7 @@ input:checked + .slider:before {
     .logo img {
         max-width: 50%;
         height: auto;
-        min-width: 150px;
+        min-width: 75px;
         content: url("https://sergiofdeveloper.github.io/wdd230/chamber/images/small-logo.png");
       }
   
