@@ -682,6 +682,7 @@ input:checked + .slider:before {
   
     nav ul {
       display: none; /* Inicialmente, ocultar el menú de navegación en la versión móvil */
+      padding-right: 15px;
     }
   
     .switch {
