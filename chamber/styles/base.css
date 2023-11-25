@@ -210,10 +210,6 @@ main {
     width: 95%; /* Ajustamos el ancho de la línea al 80% del contenedor */
     padding-bottom: 5px;  
 }
-.weather-img {
-    width: 50px; /* Adjust the size as needed */
-    height: 50px; /* Adjust the size as needed */
-}
 .hero {
     position: relative; /* Establecer posición relativa */
     max-width: 100%; /* Establecemos un ancho máximo para la sección */
