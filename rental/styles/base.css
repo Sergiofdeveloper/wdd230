@@ -146,7 +146,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ajusta la altura según sea necesario */
+    height: 100vh;  
     background-image: url("https://sergiofdeveloper.github.io/wdd230/rental/images/background-form.webp"); /* Ruta a tu imagen de fondo */
     background-size: contain;  
     background-position: center;  
