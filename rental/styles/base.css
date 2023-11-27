@@ -6,7 +6,7 @@ body, html {
 header {
     
     background-image:url("https://sergiofdeveloper.github.io/wdd230/rental/images/background.webp");
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el área del header */
+    background-size: cover;  
     background-position: center;    
     color: white;
     display: flex;
@@ -24,7 +24,7 @@ header {
     align-items: center;
 }
 .menu-btn {
-    display: none; /* Oculta el botón de menú en la versión normal */
+    display: none;  
     cursor: pointer;
     font-size: 24px;
     color: white;
@@ -52,7 +52,7 @@ header {
 
 .menu-links a:hover {
     color: yellow;
-    text-shadow: 0 0 10px yellow; /* Adjust the shadow as needed */
+    text-shadow: 0 0 10px yellow;  
 }
 
 .social-media {
@@ -82,11 +82,11 @@ main {
 }
 footer{
     position: relative;
-    background-image: url("https://sergiofdeveloper.github.io/wdd230/rental/images/background.webp"); /* Reemplaza 'ruta-de-tu-imagen.jpg' con la ruta de tu imagen de fondo */
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el área del footer */
-    background-position: center; /* Ajusta la posición de la imagen al centro */
+    background-image: url("https://sergiofdeveloper.github.io/wdd230/rental/images/background.webp");  
+    background-size: cover;  
+    background-position: center;  
     color: white;
-    padding: 20px; /* Ajusta el relleno según sea necesario*/
+    padding: 20px;  
     text-align: center;
 }
 .footer-content {
@@ -116,7 +116,7 @@ footer{
 }
 
 .footer-menu nav li {
-    font-size: 20px; /* Ajusta el tamaño de la fuente según sea necesario */
+    font-size: 20px;  
     margin-right: 15px;    
 }
 
@@ -128,17 +128,17 @@ footer{
 }
 .footer-menu nav a:hover {
     color: yellow;
-    text-shadow: 0 0 10px yellow; /* Ajusta la sombra del texto al hacer hover */
+    text-shadow: 0 0 10px yellow;  
 }
 
 hr {
     border: 0; /* Elimina el borde */
     height: 1px; /* Ajusta la altura de la línea */
     background-color: white;
-    margin: 20px 0; /* Ajusta el margen según sea necesario */
+    margin: 20px 0;  
 }
 .project-info {
-    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+    margin-top: 20px;   
 }
 
 /*-------------------STYLES FORM --------------------------*/
@@ -159,7 +159,7 @@ hr {
 .background-form {
     max-width: 1500px;
     width: 100%;
-    padding: 20px; /* Ajusta según tus necesidades */
+    padding: 20px;  
     box-sizing: border-box;
     
    
@@ -245,7 +245,7 @@ form input.submitBtn {
 }
 
 form input.submitBtn:hover {
-    background-color: #eac44b; /* Cambia el color de fondo al hacer hover */
+    background-color: #eac44b;  
 }
 /* esto es para ayudar con las casillas requeridas*/
 
@@ -339,4 +339,18 @@ form label.top input:required:valid{
         font-size: 12px;
         padding-right: 5px;
     }
+    /*-------------------FORMS STYLES MEDIA VERSION-----------*/
+    .contact-main {
+        background-image: none;  
+        padding: 10px;  
+    }
+
+    .contact-main h1 {
+        font-size: 1.2rem;  
+    }
+
+    form {
+        width: 80%;  
+    }
 }
+ 
