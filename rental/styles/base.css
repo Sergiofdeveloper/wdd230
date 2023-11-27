@@ -142,18 +142,39 @@ hr {
 }
 
 /*-------------------STYLES FORM --------------------------*/
-.background-form {
-    background-image: url('images/background-form.webp'); 
-    background-size: cover;
-    background-position: center;
+.contact-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta la altura según sea necesario */
+    background-image: url("https://sergiofdeveloper.github.io/wdd230/rental/images/background-form.webp"); /* Ruta a tu imagen de fondo */
+    background-size: contain; /* Ajusta según tus necesidades */
+    background-position: center; /* Centra la imagen */
     background-repeat: no-repeat;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.1); /* Adjust the fourth value (0.1) to set the level of transparency */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
 }
+
+.background-form {
+    max-width: 1500px;
+    width: 100%;
+    padding: 20px; /* Ajusta según tus necesidades */
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8); /* Color de fondo del formulario */
+}
+
+.contact-main h1 {
+    font-size: 1.3rem; /* Ajusta según tus necesidades */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px; /* Ajusta según tus necesidades */
+}
+
 form {
     width: 50%;
     max-width: 400px;  
     margin: 2rem auto; 
+    background-color: white;
 }
 
 form fieldset{
@@ -168,6 +189,8 @@ form legend{
     color: #080808;
     margin: 0 1rem;
     padding: 0 0.5rem;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 form label.top, form div{
@@ -217,7 +240,7 @@ form input.submitBtn {
     max-width: 20rem;
     margin-bottom: 10px;
     margin-top: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 /* esto es para ayudar con las casillas requeridas*/
@@ -227,7 +250,7 @@ form label.top input:required{
 }
 
 form label.top input:required:valid{
-    border-left: green solid 6px; 
+    border-left: green solid 10px; 
  }
 
 
