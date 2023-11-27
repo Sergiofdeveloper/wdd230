@@ -162,6 +162,7 @@ hr {
     padding: 20px; /* Ajusta según tus necesidades */
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.8); /* Color de fondo del formulario */
+   
 }
 
 .contact-main h1 {
@@ -243,6 +244,9 @@ form input.submitBtn {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
+form input.submitBtn:hover {
+    background-color: #eac44b; /* Cambia el color de fondo al hacer hover */
+}
 /* esto es para ayudar con las casillas requeridas*/
 
 form label.top input:required{
