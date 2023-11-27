@@ -210,7 +210,7 @@ form label.top select{
     border-radius: 4px;
     padding: .75rem;
     color: #555;
-    width: 100%;
+    width: 70%;
     max-width: 20rem;
     background-color: rgba(0,0,0,0.1);
 }
@@ -350,7 +350,7 @@ form label.top input:required:valid{
     }
 
     form {
-        width: 80%;  
+        width: 90%;  
     }
 }
  
