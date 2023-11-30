@@ -20,21 +20,18 @@ document.addEventListener('DOMContentLoaded', function () {
         const cell = row.insertCell();
 
         if (key === 'Image') {
-          // Handle images with lazy loading attribute
           const img = document.createElement('img');
           img.src = rental[key];
           img.alt = rental['Rental Type'];
-          img.loading = 'lazy'; // Add lazy loading attribute
+          img.loading = 'lazy';  
           cell.appendChild(img);
         } else if (typeof rental[key] === 'object') {
-          // Handle objects (e.g., "Reservation" and "Walk in")
           for (const subKey in rental[key]) {
             const subCell = document.createElement('div');
             subCell.textContent = `${subKey}: ${rental[key][subKey]}`;
             cell.appendChild(subCell);
           }
         } else {
-          // Handle other data types
           cell.textContent = rental[key];
         }
       }
