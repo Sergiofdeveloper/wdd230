@@ -30,7 +30,7 @@
       
       {
         "Rental Type": "Honda PCX150 Scooter",
-        "Image": "https://sergiofdeveloper.github.io/wdd230/rental/images/honda-pcx150.webp",
+        "Image": "https://sergiofdeveloper.github.io/wdd230/rental/images/honda-pcx.webp",
         "Max. Persons": 2,
         "Reservation": {
             "Half Day (3 hrs)": "$40",
