@@ -30,7 +30,7 @@
       
       {
         "Rental Type": "Honda PCX150 Scooter",
-        "Image": "https://sergiofdeveloper.github.io/wdd230/rental/images/honda-PCX150.webp",
+        "Image": "https://sergiofdeveloper.github.io/wdd230/rental/images/honda-pcx150.webp",
         "Max. Persons": 2,
         "Reservation": {
             "Half Day (3 hrs)": "$40",
@@ -58,7 +58,7 @@
      
       {
         "Rental Type": "Jeep Wrangler - 4 door with a/c",
-        "Image": "path/to/jeep_wrangler_4door_photo.jpg",
+        "Image": "https://sergiofdeveloper.github.io/wdd230/rental/images/jeep-wrangler.webp",
         "Max. Persons": 5,
         "Reservation": {
             "Half Day (3 hrs)": "$70",
@@ -72,7 +72,7 @@
        
       {
         "Rental Type": "Jeep Wrangler - 2 door",
-        "Image": "path/to/jeep_wrangler_2door_photo.jpg",
+        "Image": "https://sergiofdeveloper.github.io/wdd230/rental/images/jeep-wrangler2p.webp",
         "Max. Persons": 4,
         "Reservation": {
             "Half Day (3 hrs)": "$60",
