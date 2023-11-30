@@ -378,6 +378,7 @@ form label.top input:required:valid{
     .footer-proyect-info {
         font-size: 12px;
         text-decoration: none;
+        color: white;
     }
     /*-------------------FORMS STYLES MEDIA VERSION-----------*/
     .contact-main {
