@@ -262,25 +262,33 @@ form label.top input:required:valid{
     margin-top: 40px;
 }
 /******************** RENTALS PAGE STYLES ***********************/
-
-table {
+#rentalsTableContainer {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
   }
   
-  th, td {
+  table, th, td {
     border: 1px solid #ddd;
-    padding: 8px;
+  }
+  
+  th, td {
+    padding: 12px;
     text-align: left;
   }
   
   th {
     background-color: #f2f2f2;
   }
-
-
-
 
 /* For screens up to 768px width (typical mobile devices) */
 @media screen and (max-width: 768px) {

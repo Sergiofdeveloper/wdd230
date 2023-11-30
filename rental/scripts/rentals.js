@@ -1,33 +1,56 @@
-// Haciendo una solicitud asíncrona para obtener datos JSON desde un archivo
-async function getRentalsData() {
-    const response = await fetch('data/rentals.json');
-    const data = await response.json();
-    return data;
-  }
-  
-  // Function to populate the table
-  async function populateTable() {
-    // Obtener los datos de alquiler de la función asincrónica
-    const rentalsData = await getRentalsData();
-    const tableBody = document.getElementById('rentalsTableBody');
-  
-    // Llenar la tabla con los datos obtenidos
-    rentalsData.rentals.forEach(rental => {
-      const row = document.createElement('tr');
-      row.innerHTML = `
-        <td>${rental['Rental Type']}</td>
-        <td>${rental['Max. Persons']}</td>
-        <td>${rental.Prices.Reservation['Half Day (3 hrs)']}</td>
-        <td>${rental.Prices.Reservation['Full Day']}</td>
-        <td>${rental.Prices['Walk in']['Half Day']}</td>
-        <td>${rental.Prices['Walk in']['Full Day']}</td>
-        <td><img src="${rental.Image}" alt="${rental['Rental Type']}"></td>
-      `;
-  
-      tableBody.appendChild(row);
+document.addEventListener('DOMContentLoaded', function () {
+  const rentalsTableContainer = document.getElementById('rentalsTableContainer');
+
+  // Function to create and populate the table
+  function createRentalsTable(data) {
+    const table = document.createElement('table');
+
+    // Create table header
+    const headerRow = table.insertRow();
+    for (const key in data.rentals[0]) {
+      const th = document.createElement('th');
+      th.textContent = key;
+      headerRow.appendChild(th);
+    }
+
+    // Create table rows
+    data.rentals.forEach(rental => {
+      const row = table.insertRow();
+      for (const key in rental) {
+        const cell = row.insertCell();
+
+        if (key === 'Image') {
+          // Handle images with lazy loading attribute
+          const img = document.createElement('img');
+          img.src = rental[key];
+          img.alt = rental['Rental Type'];
+          img.loading = 'lazy'; // Add lazy loading attribute
+          cell.appendChild(img);
+        } else if (typeof rental[key] === 'object') {
+          // Handle objects (e.g., "Reservation" and "Walk in")
+          for (const subKey in rental[key]) {
+            const subCell = document.createElement('div');
+            subCell.textContent = `${subKey}: ${rental[key][subKey]}`;
+            cell.appendChild(subCell);
+          }
+        } else {
+          // Handle other data types
+          cell.textContent = rental[key];
+        }
+      }
     });
+
+    rentalsTableContainer.appendChild(table);
   }
-  
-  // Call the function to populate the table
-  populateTable();
-  
+
+  // Fetch JSON data
+  fetch('data/rentals.json')
+    .then(response => response.json())
+    .then(data => {
+      // Call the function with the retrieved JSON data
+      createRentalsTable(data);
+    })
+    .catch(error => {
+      console.error('Error fetching JSON:', error);
+    });
+});
