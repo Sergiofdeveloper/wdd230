@@ -2,7 +2,7 @@
     "rentals": [
       {
         "Rental Type": "Honda Metro Scooter",
-        "Image": "https://sergiofdeveloper.github.io/wdd230/rental/images/honda-metro-scooter.webp",
+        "Image": "https://sergiofdeveloper.github.io/wdd230/rental/images/honda-metro.webp",
         "Max. Persons": 1,
         "Reservation": {
             "Half Day (3 hrs)": "$20",
@@ -16,7 +16,7 @@
       
       {
         "Rental Type": "Honda Dio Scooter",
-        "Image": "path/to/honda_dio_photo.jpg",
+        "Image":  "https://sergiofdeveloper.github.io/wdd230/rental/images/honda-dio.webp",
         "Max. Persons": 2,
         "Reservation": {
             "Half Day (3 hrs)": "$30",
