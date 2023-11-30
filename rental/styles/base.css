@@ -346,6 +346,11 @@ form label.top input:required:valid{
         font-size: 12px;
         padding-right: 5px;
     }
+
+    .footer-proyect-info {
+        font-size: 12px;
+        text-decoration: none;
+    }
     /*-------------------FORMS STYLES MEDIA VERSION-----------*/
     .contact-main {
         flex-direction: column; 
