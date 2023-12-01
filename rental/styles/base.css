@@ -289,10 +289,19 @@ form label.top input:required:valid{
   th {
     background-color: #f2f2f2;
   }
+
+
 /********************RESERVATION PAGE STYLES ***********************/
+
+#reservations {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 #form-request {
     margin-top: 20px;
+    width: 66%;
 }
 
 #form-request form {
@@ -355,6 +364,14 @@ form label.top input:required:valid{
     background-color: #ffd700;
 }
 
+#Rental-information {
+    width: 33%; /* Ajusta el ancho según tus preferencias */
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 /* For screens up to 768px width (typical mobile devices) */
 @media screen and (max-width: 768px) {
