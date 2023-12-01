@@ -301,7 +301,7 @@ form label.top input:required:valid{
 
 #form-request {
     margin-top: 20px;
-    width: 66%;
+    width: 48%;
 }
 
 #form-request form {
@@ -368,6 +368,7 @@ form label.top input:required:valid{
     width: 33%; /* Ajusta el ancho según tus preferencias */
     box-sizing: border-box;
     padding: 20px;
+    margin-right: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
