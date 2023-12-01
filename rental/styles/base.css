@@ -282,13 +282,79 @@ form label.top input:required:valid{
   }
   
   th, td {
-    padding: 12px;
-    text-align: left;
+     
+    text-align: center;
   }
   
   th {
     background-color: #f2f2f2;
   }
+/********************RESERVATION PAGE STYLES ***********************/
+
+#form-request {
+    margin-top: 20px;
+}
+
+#form-request form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#form-request label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#form-request input,
+#form-request select,
+#form-request textarea {
+    width: calc(100% - 16px);
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#form-request .number-input {
+    display: flex;
+    align-items: center;
+}
+
+#form-request .number-input button {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#form-request .number-input input {
+    width: 50px;
+    text-align: center;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#form-request button {
+    background-color: gold;
+    color: #333;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#form-request button:hover {
+    background-color: #ffd700;
+}
+
 
 /* For screens up to 768px width (typical mobile devices) */
 @media screen and (max-width: 768px) {
