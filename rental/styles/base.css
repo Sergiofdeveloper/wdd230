@@ -304,6 +304,10 @@ form label.top input:required:valid{
     width: 66%;
 }
 
+#form-request h1{
+text-align: center;
+}
+
 #form-request form {
     background-color: #f9f9f9;
     padding: 20px;
@@ -364,15 +368,18 @@ form label.top input:required:valid{
     background-color: #ffd700;
 }
 
-#Rental-information {
-    width: 33%; /* Ajusta el ancho según tus preferencias */
+#rental-information {
+    width: 33%;  
     box-sizing: border-box;
     padding: 20px;
-    margin-right: 20px;
+    margin-right: 50px;
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-height: 600px; 
+    margin-top: 20px;
 }
+
 
 /* For screens up to 768px width (typical mobile devices) */
 @media screen and (max-width: 768px) {
@@ -464,7 +471,7 @@ form label.top input:required:valid{
         text-decoration: none;
         color: white;
     }
-    /*-------------------FORMS STYLES MEDIA VERSION-----------*/
+    /*-------------------CONTACTA PAGE STYLES MEDIA VERSION-----------*/
     .contact-main {
         flex-direction: column; 
         align-items: center;
@@ -487,6 +494,23 @@ form label.top input:required:valid{
     .addresses .address1,
     .addresses .address2 {
         margin-bottom: 20px;
+    }
+
+      /*-------------------RESERVATION PAGE STYLES MEDIA VERSION-----------*/
+
+      #reservations {
+        flex-direction: column; 
+    }
+
+    #form-request {
+        width: 100%;  
+        margin-right: 0; /
+    }
+
+    #rental-information {
+        width: 100%;  
+        margin-right: 0; 
+        margin-top: 20px; 
     }
 }
  
