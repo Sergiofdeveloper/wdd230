@@ -96,14 +96,16 @@
         
                     <label for="location">Home State or Country*</label>
                     <select id="location" name="location" required>
-                            <option value="">Please Select your state/country      &#9662</option>
+                        <optgroup label="State">
+                        <option value="">Please select your state/country      &#9662</option>
                             <option value="mexico DF">Mexico DF</option>
                             <option value="jalisco">Jalisco</option>
                             <option value="chihuahua">Chihuahua</option>
                             <option value="guerrero">Guerrero</option>
                             <option value="puebla">Puebla</option>
                             <option value="oaxaca">Oaxaca</option>
-                            <option value="--">--------------------</option>
+                        </optgroup>
+                        <optgroup label="Country">
                             <option value="australia">Australia</option>
                             <option value="brazil">Brazil</option>
                             <option value="belice">Belice</option>
@@ -111,12 +113,12 @@
                             <option value="china">China</option>
                             <option value="france">France</option>
                             <option value="germany">Germany</option>
-                            <option value="mexico">Mexico</option>
                             <option value="russia">Russia</option>
                             <option value="spain">Spain</option>
                             <option value="uk">United Kingdom</option>
                             <option value="usa">United States</option>  
-                            <option value="other">Other</option>                
+                            <option value="other">Other</option> 
+                        </optgroup>               
                         </select>
         
                     <label for="cruise-line">Cruise Line (if applicable)</label>
