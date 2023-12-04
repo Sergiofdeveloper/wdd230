@@ -518,12 +518,12 @@ text-align: center;
     }
  /*-------------------RENTALS PAGE STYLES MEDIA VERSION-----------*/
  #rentalsTableContainer {
-    padding: 10px; /* Ajusta el relleno para dispositivos móviles */
+    padding: 5px; /* Ajusta el relleno para dispositivos móviles */
 }
 
 table, th, td {
-    font-size: 6px; /* Ajusta el tamaño de fuente para dispositivos móviles */
-    padding: 12px;
+    font-size: 8px; /* Ajusta el tamaño de fuente para dispositivos móviles */
+    padding: 4px;
 }
 
 
