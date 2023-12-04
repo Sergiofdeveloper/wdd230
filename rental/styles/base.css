@@ -263,7 +263,7 @@ form label.top input:required:valid{
 }
 /******************** RENTALS PAGE STYLES ***********************/
 #rentalsTableContainer {
-    max-width: 800px;
+    max-width: 100%;
     margin: 20px auto;
     background-color: #fff;
     padding: 20px;
@@ -273,6 +273,7 @@ form label.top input:required:valid{
   
   table {
     width: 100%;
+    max-width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
   }
@@ -289,7 +290,10 @@ form label.top input:required:valid{
   th {
     background-color: #f2f2f2;
   }
-
+  table img {
+    max-width: 100%; /* Hace que las imágenes se ajusten al 100% del contenedor */
+    height: auto;
+  }
 
 /********************RESERVATION PAGE STYLES ***********************/
 
@@ -512,5 +516,16 @@ text-align: center;
         margin-right: 0; 
         margin-top: 20px; 
     }
+ /*-------------------RENTALS PAGE STYLES MEDIA VERSION-----------*/
+ #rentalsTableContainer {
+    padding: 10px; /* Ajusta el relleno para dispositivos móviles */
+}
+
+table, th, td {
+    font-size: 6px; /* Ajusta el tamaño de fuente para dispositivos móviles */
+    padding: 12px;
+}
+
+
 }
  
