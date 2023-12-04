@@ -525,7 +525,16 @@ table, th, td {
     font-size: 8px; /* Ajusta el tamaño de fuente para dispositivos móviles */
     padding: 4px;
 }
-
+table td:first-child {
+    width: 20%;  
 
 }
- 
+table td:nth-child(2){
+    width: 30%;  
+
+}
+table td:nth-child(3){
+    width: 10%;  
+
+}
+}
