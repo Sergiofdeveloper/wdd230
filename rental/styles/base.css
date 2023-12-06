@@ -264,6 +264,21 @@ form label.top input:required:valid{
     margin-top: 40px;
 }
 /******************** RENTALS PAGE STYLES ***********************/
+#logo-prices{
+    background: linear-gradient(#272c30, #272c30 80%, #f5f6f6 70%);
+    height: 300px;
+    position: relative;
+    margin-bottom: 50px;
+} 
+#logo-prices h1{
+    color:#e0e0e0;
+    font-size:70px
+}
+#rental-image {
+    position: absolute;
+    bottom: 0; /* Adjust the top value as needed */
+    right: 0; /* Adjust the right value as needed */
+}
 #rentalsTableContainer {
     max-width: 75%;
     margin: 20px auto;
@@ -272,7 +287,8 @@ form label.top input:required:valid{
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-  
+
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -302,7 +318,7 @@ table td:nth-child(2){
 }
 
 #logo-fleet{
-    background-color: #272c30;
+    background: linear-gradient(#272c30, #272c30 80%, #f5f6f6 70%);
     height: 300px;
     position: relative;
     margin-bottom: 50px;
@@ -321,6 +337,7 @@ table td:nth-child(2){
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-bottom: 30px;
   }
   
   .fleet-item {
