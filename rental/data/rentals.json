@@ -4,6 +4,10 @@
         "Rental Type": "Honda Metro Scooter",
         "Image": "https://sergiofdeveloper.github.io/wdd230/rental/images/honda-metro.webp",
         "Max. Persons": 1,
+        "cc": "49cc",
+        "Accessories1":"Rear trunk",
+        "Accessories2":"2 helmets",
+        "Horse power": "5 cv",
         "Reservation": {
             "Half Day": "$20",
             "Full Day": "$30"
@@ -12,12 +16,17 @@
             "Half Day": "$25",
             "Full Day": "$35"
           }
+         
         },
       
       {
         "Rental Type": "Honda Dio Scooter",
         "Image":  "https://sergiofdeveloper.github.io/wdd230/rental/images/honda-dio.webp",
         "Max. Persons": 2,
+        "cc": "110cc",
+        "Accessories1":"Rear trunk",
+        "Accessories2":"2 helmets",
+        "Horse power": "8 cv",
         "Reservation": {
             "Half Day": "$30",
             "Full Day": "$40"
@@ -32,6 +41,10 @@
         "Rental Type": "Honda PCX150 Scooter",
         "Image": "https://sergiofdeveloper.github.io/wdd230/rental/images/honda-pcx.webp",
         "Max. Persons": 2,
+        "cc": "157cc",
+        "Accessories1":"Large storage area",
+        "Accessories2":"Electric start",
+        "Horse power": "14cv",
         "Reservation": {
             "Half Day": "$40",
             "Full Day": "$50"
@@ -46,6 +59,10 @@
         "Rental Type": "Honda Pioneer ATV",
         "Image": "https://sergiofdeveloper.github.io/wdd230/rental/images/honda-pioneer.webp",
         "Max. Persons": 4,
+        "cc": "1000cc",
+        "Accessories1":"6-speed automatic Transmission",
+        "Accessories2":"four drive modes include 2WD, 4WD",
+        "Horse power": "72cv",
         "Reservation": {
             "Half Day": "$50",
             "Full Day": "$70"

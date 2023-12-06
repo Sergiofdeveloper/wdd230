@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   const rentalsTableContainer = document.getElementById('rentalsTableContainer');
+  const fleetContainer = document.getElementById('fleet');
 
   // Function to create and populate the table
   function createRentalsTable(data) {
@@ -7,34 +8,38 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Create table header
     const headerRow = table.insertRow();
-    for (const key in data.rentals[0]) {
+    const columnsToDisplay = ['Rental Type', 'Max. Persons', 'Reservation', 'Walk in'];
+    columnsToDisplay.forEach(column => {
       const th = document.createElement('th');
-      th.textContent = key;
+      th.textContent = column;
       headerRow.appendChild(th);
-    }
+    });
 
     // Create table rows
     data.rentals.forEach(rental => {
       const row = table.insertRow();
-      for (const key in rental) {
+      columnsToDisplay.forEach(column => {
         const cell = row.insertCell();
 
-        if (key === 'Image') {
-          const img = document.createElement('img');
-          img.src = rental[key];
-          img.alt = rental['Rental Type'];
-          img.loading = 'lazy';  
-          cell.appendChild(img);
-        } else if (typeof rental[key] === 'object') {
-          for (const subKey in rental[key]) {
-            const subCell = document.createElement('div');
-            subCell.textContent = `${subKey}: ${rental[key][subKey]}`;
-            cell.appendChild(subCell);
+        if (column === 'Image') {
+          // Skip the Image column
+          return;
+        } else if (column === 'Reservation' || column === 'Walk in') {
+          const subCell = document.createElement('div');
+          subCell.className = 'reservation-info';
+          
+          for (const subKey in rental[column]) {
+            const subElement = document.createElement('div');
+            subElement.textContent = `${subKey}: ${rental[column][subKey]}`;
+            subCell.appendChild(subElement);
           }
+
+          cell.appendChild(subCell);
         } else {
-          cell.textContent = rental[key];
+          cell.className = 'normal-cell';
+          cell.textContent = rental[column];
         }
-      }
+      });
     });
 
     rentalsTableContainer.appendChild(table);
@@ -46,6 +51,25 @@ document.addEventListener('DOMContentLoaded', function () {
     .then(data => {
       // Call the function with the retrieved JSON data
       createRentalsTable(data);
+
+      // Create and populate the fleet
+      data.rentals.forEach(rental => {
+        const rentalDiv = document.createElement('div');
+        rentalDiv.className = 'fleet-item';
+
+        const img = document.createElement('img');
+        img.src = rental['Image'];
+        img.alt = rental['Rental Type'];
+        img.loading = 'lazy';
+
+        const productName = document.createElement('div');
+        productName.textContent = rental['Rental Type'];
+
+        rentalDiv.appendChild(img);
+        rentalDiv.appendChild(productName);
+
+        fleetContainer.appendChild(rentalDiv);
+      });
     })
     .catch(error => {
       console.error('Error fetching JSON:', error);

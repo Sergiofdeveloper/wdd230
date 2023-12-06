@@ -1,6 +1,8 @@
 body, html {
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
 header {
@@ -97,7 +99,7 @@ footer{
 }
 
 .centered-content {
-    display: inline-block; /* Permite centrar el contenido */
+    display: inline-block;  
 }
 
 .footer-menu {
@@ -263,7 +265,7 @@ form label.top input:required:valid{
 }
 /******************** RENTALS PAGE STYLES ***********************/
 #rentalsTableContainer {
-    max-width: 100%;
+    max-width: 75%;
     margin: 20px auto;
     background-color: #fff;
     padding: 20px;
@@ -271,29 +273,67 @@ form label.top input:required:valid{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  table {
+table {
     width: 100%;
-    max-width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-  }
+}
   
-  table, th, td {
+table, th, td {
     border: 1px solid #ddd;
+    
+}
+  
+th, td {
+    text-align: center;
+    padding: 10px;
+}
+  
+th {
+    background-color: goldenrod; 
+}
+
+table td:first-child {
+    width: 40%;  
+}
+  
+table td:nth-child(2){
+    width: 10%;  
+}
+ 
+#fleet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   
-  th, td {
-     
+  .fleet-item {
+    text-align: center;
+    margin: 10px;
+    height: 400px;
+    padding-top: 30px;
+    width: 30%; /* Ajusta el ancho según sea necesario */
+    border: 2px solid gold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  .fleet-item div {
+    font-size: 40px; /* Tamaño de fuente de 24px para el texto */
+    font-weight: bold; /* Texto en negrita */
+    
+  }
+
+  .fleet-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+   
+    
+  }
+  #prices h1 {
     text-align: center;
   }
   
-  th {
-    background-color: #f2f2f2;
-  }
-  table img {
-    max-width: 100%; /* Hace que las imágenes se ajusten al 100% del contenedor */
-    height: auto;
-  }
 
 /********************RESERVATION PAGE STYLES ***********************/
 
@@ -383,11 +423,11 @@ text-align: center;
     max-height: 600px; 
     margin-top: 20px;
 }
-/********************THANKS PAGE STYLES ***********************/
+/********************THANKS  / RESERVED PAGE STYLES ***********************/
 #funstuff {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px; /* Espaciado entre las imágenes y textos */
+    gap: 20px;  
 }
 
 .fun-item {
