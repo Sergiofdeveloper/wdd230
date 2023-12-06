@@ -647,7 +647,13 @@ table td:nth-child(3){
 #logo-fleet{
     height: 100px;
 }
+#logo-prices{
+    height: 100px;
+}
 #logo-fleet h1 {
+    font-size: 30px; /* Adjust as needed */
+}
+#logo-prices h1 {
     font-size: 30px; /* Adjust as needed */
 }
 #fleet-image {
