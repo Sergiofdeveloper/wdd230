@@ -613,18 +613,28 @@ table, th, td {
     padding: 4px;
 }
 table td:first-child {
-    width: 20%;  
-
-}
-table td:nth-child(2){
     width: 30%;  
 
 }
-table td:nth-child(3){
+table td:nth-child(2){
     width: 10%;  
 
 }
+table td:nth-child(3){
+    width: 30%;  
+
+}
 .fleet-item {
-    width: 48%; /* Adjust as needed */
+    width: 70%; /* Adjust as needed */
+}
+#logo-fleet{
+    height: 100px;
+}
+#logo-fleet h1 {
+    font-size: 30px; /* Adjust as needed */
+}
+#fleet-image {
+    max-width: 50%; /* Adjust as needed */
+    height: auto;
 }
 }
