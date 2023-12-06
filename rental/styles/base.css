@@ -654,14 +654,14 @@ table td:nth-child(3){
     font-size: 30px;  
 }
 #logo-prices h1 {
-    font-size: 30px;  
+    font-size: 25px;  
 }
 #fleet-image {
     max-width: 50%;  
     height: auto;
 }
 #rental-image {
-    max-width: 50%;  
+    max-width: 30%;  
     height: auto;
 }
 }
