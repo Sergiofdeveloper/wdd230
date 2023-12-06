@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Create table header
     const headerRow = table.insertRow();
-    const columnsToDisplay = ['Rental Type', 'Max. Persons', 'Reservation', 'Walk in'];
+    const columnsToDisplay = ['Rental Type', 'Max. Persons', 'cc', 'Accessories1', 'Accessories2', 'Horse power', 'Reservation', 'Walk in'];
     columnsToDisplay.forEach(column => {
       const th = document.createElement('th');
       th.textContent = column;
@@ -37,7 +37,18 @@ document.addEventListener('DOMContentLoaded', function () {
           cell.appendChild(subCell);
         } else {
           cell.className = 'normal-cell';
-          cell.textContent = rental[column];
+          
+          if (column === 'Rental Type') {
+            // If the column is 'Rental Type', add the information below it
+            cell.textContent = rental[column];
+            
+            // Add additional information below 'Rental Type'
+            const infoCell = row.insertCell();
+            infoCell.className = 'normal-cell';
+            infoCell.textContent = `CC: ${rental['cc']}, Accessories1: ${rental['Accessories1']}, Accessories2: ${rental['Accessories2']}, Horse power: ${rental['Horse power']}`;
+          } else {
+            cell.textContent = rental[column];
+          }
         }
       });
     });
