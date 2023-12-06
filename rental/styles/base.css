@@ -308,19 +308,29 @@ table td:nth-child(2){
   }
   
   .fleet-item {
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
     text-align: center;
     margin: 10px;
-    height: 400px;
+    height: 500px;
     padding-top: 30px;
     width: 30%; /* Ajusta el ancho según sea necesario */
     border: 2px solid gold;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
   }
-  .fleet-item div {
-    font-size: 30px; /* Tamaño de fuente de 24px para el texto */
-    font-weight: bold; /* Texto en negrita */
-    
+  .fleet-item > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .product-name {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 8px;
   }
 
   .fleet-item img {
@@ -334,7 +344,11 @@ table td:nth-child(2){
     text-align: center;
   }
   
+  .additional-info {
+    font-size: 16px;
+    margin-top: 5px;
 
+  }
 /********************RESERVATION PAGE STYLES ***********************/
 
 #reservations {

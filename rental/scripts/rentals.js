@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Create table header
     const headerRow = table.insertRow();
-    const columnsToDisplay = ['Rental Type', 'Max. Persons', 'cc', 'Accessories1', 'Accessories2', 'Horse power', 'Reservation', 'Walk in'];
+    const columnsToDisplay = ['Rental Type', 'Max. Persons', 'Reservation', 'Walk in'];
     columnsToDisplay.forEach(column => {
       const th = document.createElement('th');
       th.textContent = column;
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else if (column === 'Reservation' || column === 'Walk in') {
           const subCell = document.createElement('div');
           subCell.className = 'reservation-info';
-          
+
           for (const subKey in rental[column]) {
             const subElement = document.createElement('div');
             subElement.textContent = `${subKey}: ${rental[column][subKey]}`;
@@ -37,18 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
           cell.appendChild(subCell);
         } else {
           cell.className = 'normal-cell';
-          
-          if (column === 'Rental Type') {
-            // If the column is 'Rental Type', add the information below it
-            cell.textContent = rental[column];
-            
-            // Add additional information below 'Rental Type'
-            const infoCell = row.insertCell();
-            infoCell.className = 'normal-cell';
-            infoCell.textContent = `CC: ${rental['cc']}, Accessories1: ${rental['Accessories1']}, Accessories2: ${rental['Accessories2']}, Horse power: ${rental['Horse power']}`;
-          } else {
-            cell.textContent = rental[column];
-          }
+          cell.textContent = rental[column];
         }
       });
     });
@@ -63,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // Call the function with the retrieved JSON data
       createRentalsTable(data);
 
-      // Create and populate the fleet
+      // Add fleet items
       data.rentals.forEach(rental => {
         const rentalDiv = document.createElement('div');
         rentalDiv.className = 'fleet-item';
@@ -74,10 +63,16 @@ document.addEventListener('DOMContentLoaded', function () {
         img.loading = 'lazy';
 
         const productName = document.createElement('div');
+        productName.className = 'product-name';
         productName.textContent = rental['Rental Type'];
+
+        const additionalInfo = document.createElement('div');
+        additionalInfo.className = 'additional-info';
+        additionalInfo.textContent = `${rental['cc']}, ${rental['Accessories1']}, ${rental['Accessories2']}, ${rental['Horse power']}`;
 
         rentalDiv.appendChild(img);
         rentalDiv.appendChild(productName);
+        rentalDiv.appendChild(additionalInfo);
 
         fleetContainer.appendChild(rentalDiv);
       });
@@ -86,3 +81,4 @@ document.addEventListener('DOMContentLoaded', function () {
       console.error('Error fetching JSON:', error);
     });
 });
+
