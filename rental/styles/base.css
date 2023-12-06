@@ -300,7 +300,23 @@ table td:first-child {
 table td:nth-child(2){
     width: 10%;  
 }
- 
+
+#logo-fleet{
+    background-color: #58636e;
+    height: 300px;
+    position: relative;
+    margin-bottom: 50px;
+}
+#logo-fleet h1{
+    color:#e0e0e0;
+    font-size:90px
+}
+#fleet-image {
+    position: absolute;
+    bottom: 0; /* Adjust the top value as needed */
+    right: 0; /* Adjust the right value as needed */
+}
+
 #fleet {
     display: flex;
     flex-wrap: wrap;
