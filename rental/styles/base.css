@@ -654,4 +654,8 @@ table td:nth-child(3){
     max-width: 50%; /* Adjust as needed */
     height: auto;
 }
+#rental-image {
+    max-width: 50%; /* Adjust as needed */
+    height: auto;
+}
 }
