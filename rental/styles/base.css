@@ -302,14 +302,14 @@ table td:nth-child(2){
 }
 
 #logo-fleet{
-    background-color: #58636e;
+    background-color: #272c30;
     height: 300px;
     position: relative;
     margin-bottom: 50px;
 }
 #logo-fleet h1{
     color:#e0e0e0;
-    font-size:90px
+    font-size:100px
 }
 #fleet-image {
     position: absolute;
@@ -605,6 +605,7 @@ text-align: center;
  /*-------------------RENTALS PAGE STYLES MEDIA VERSION-----------*/
  #rentalsTableContainer {
     padding: 5px; /* Ajusta el relleno para dispositivos móviles */
+    max-width: 100%;
 }
 
 table, th, td {
@@ -622,5 +623,8 @@ table td:nth-child(2){
 table td:nth-child(3){
     width: 10%;  
 
+}
+.fleet-item {
+    width: 48%; /* Adjust as needed */
 }
 }
