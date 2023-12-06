@@ -318,7 +318,7 @@ table td:nth-child(2){
     border-radius: 10px;
   }
   .fleet-item div {
-    font-size: 40px; /* Tamaño de fuente de 24px para el texto */
+    font-size: 30px; /* Tamaño de fuente de 24px para el texto */
     font-weight: bold; /* Texto en negrita */
     
   }

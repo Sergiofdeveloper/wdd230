@@ -77,6 +77,10 @@
         "Rental Type": "Jeep Wrangler - 4 door with a/c",
         "Image": "https://sergiofdeveloper.github.io/wdd230/rental/images/jeep-wrangler.webp",
         "Max. Persons": 5,
+        "cc": "3.6L",
+        "Accessories1":"Transmission: 6-Speed Manual",
+        "Accessories2":"Front And Rear Anti-Roll Bars",
+        "Horse power": "285 cv",
         "Reservation": {
             "Half Day": "$70",
             "Full Day": "$100"
