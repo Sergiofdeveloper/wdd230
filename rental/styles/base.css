@@ -642,7 +642,7 @@ table td:nth-child(3){
 
 }
 .fleet-item {
-    width: 70%; /* Adjust as needed */
+    width: 70%;  
 }
 #logo-fleet{
     height: 100px;
@@ -651,17 +651,17 @@ table td:nth-child(3){
     height: 100px;
 }
 #logo-fleet h1 {
-    font-size: 30px; /* Adjust as needed */
+    font-size: 30px;  
 }
 #logo-prices h1 {
-    font-size: 30px; /* Adjust as needed */
+    font-size: 30px;  
 }
 #fleet-image {
-    max-width: 50%; /* Adjust as needed */
+    max-width: 50%;  
     height: auto;
 }
 #rental-image {
-    max-width: 50%; /* Adjust as needed */
+    max-width: 50%;  
     height: auto;
 }
 }
