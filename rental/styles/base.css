@@ -313,7 +313,7 @@ table td:nth-child(2){
     /*align-items: center;*/
     text-align: center;
     margin: 10px;
-    height: 500px;
+    height: 400px;
     padding-top: 30px;
     width: 30%; /* Ajusta el ancho según sea necesario */
     border: 2px solid gold;
@@ -326,7 +326,7 @@ table td:nth-child(2){
     align-items: center;
     text-align: center;
   }
-  
+
   .product-name {
     font-size: 30px;
     font-weight: bold;
@@ -339,15 +339,12 @@ table td:nth-child(2){
     margin-bottom: 8px;
    
     
-  }
-  #prices h1 {
-    text-align: center;
-  }
-  
+  }  
   .additional-info {
     font-size: 16px;
     margin-top: 5px;
-
+     
+    
   }
 /********************RESERVATION PAGE STYLES ***********************/
 

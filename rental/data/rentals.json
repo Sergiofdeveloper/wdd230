@@ -78,7 +78,7 @@
         "Image": "https://sergiofdeveloper.github.io/wdd230/rental/images/jeep-wrangler.webp",
         "Max. Persons": 5,
         "cc": "3.6L",
-        "Accessories1":"Transmission: 6-Speed Manual",
+        "Accessories1":"6-Speed Manual",
         "Accessories2":"Front And Rear Anti-Roll Bars",
         "Horse power": "285 cv",
         "Reservation": {
@@ -96,7 +96,7 @@
         "Image": "https://sergiofdeveloper.github.io/wdd230/rental/images/jeep-wrangler2p.webp",
         "Max. Persons": 4,
         "cc": "3.6L",
-        "Accessories1":"Transmission: 6-Speed Manual",
+        "Accessories1":"6-Speed Manual",
         "Accessories2":"Front And Rear Anti-Roll Bars",
         "Horse power": "285 cv",
         "Reservation": {
