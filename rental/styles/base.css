@@ -700,7 +700,26 @@ font-size: 40px;
         width: 100%;  
         margin-right: 0; 
         margin-top: 20px; 
+
     }
+
+    #rental-information section {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+}
+#logo-reservation{
+    height: 100px;
+}
+#logo-reservation h1 {
+    font-size: 30px;  
+}
+#reservation-image {
+    max-width: 35%;  
+     
+}
+
  /*-------------------RENTALS PAGE STYLES MEDIA VERSION-----------*/
  #rentalsTableContainer {
     padding: 5px; /* Ajusta el relleno para dispositivos móviles */
