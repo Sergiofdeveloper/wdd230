@@ -132,6 +132,10 @@ footer{
     color: yellow;
     text-shadow: 0 0 10px yellow;  
 }
+.project-info a {
+    color: white;
+    text-decoration: none;
+}
 
 hr {
     border: 0; /* Elimina el borde */
@@ -659,6 +663,7 @@ font-size: 40px;
         text-decoration: none;
         color: white;
     }
+   
     /*-------------------CONTACT PAGE STYLES MEDIA VERSION-----------*/
     .contact-main {
         flex-direction: column; 
