@@ -275,6 +275,11 @@ form label.top input:required{
 form label.top input:required:valid{
     border-left: green solid 10px; 
  }
+
+.addresses h1{
+    font-size: 40px;
+}
+
  .addresses {
     width: 33.33%;  
     box-sizing: border-box;
