@@ -143,7 +143,23 @@ hr {
     margin-top: 20px;   
 }
 
-/*-------------------STYLES FORM --------------------------*/
+/*-------------------STYLES CONTACT PAGE --------------------------*/
+#logo-contactus{
+    background: linear-gradient(#272c30, #272c30 80%, #f5f6f6 70%);
+    height: 250px;
+    position: relative;
+    margin-bottom: 50px;
+} 
+#logo-contactus h1{
+    color:#e0e0e0;
+    font-size:100px
+}
+#contact-image {
+    position: absolute;
+    bottom: 0; /* Adjust the top value as needed */
+    right: 0; /* Adjust the right value as needed */
+}
+
 .contact-main {
     display: flex;
     justify-content: space-between; /* Ajusta el espacio entre los elementos */
@@ -159,7 +175,11 @@ hr {
     
    
 }
-
+.background-form p {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
 .contact-main h1 {
     font-size: 1.3rem;  
     text-align: center;  
@@ -258,11 +278,22 @@ form label.top input:required:valid{
 
 .addresses .address1,
 .addresses .address2 {
-    float: none; /* Reinicia el valor de flotación para que estén uno encima del otro */
-    width: 100%;  
+    border: 1px solid #ddd;     /* Borde sólido de 1 píxel con color gris claro (#ddd) */
+    border-radius: 8px;         /* Bordes redondeados */
+    margin-right: 30px;              /* Espaciado interno para separar el contenido del borde */
+    background-color: #f7f7f7;
     margin-bottom: 20px;  
     margin-top: 40px;
+    text-align: center;
 }
+.address1 img,
+.address2 img {
+    float: left;      /* Alinea la imagen a la izquierda */
+    margin: 0 auto 10px; 
+}
+
+
+
 /******************** RENTALS PAGE STYLES ***********************/
 #logo-prices{
     background: linear-gradient(#272c30, #272c30 80%, #f5f6f6 70%);
@@ -292,11 +323,11 @@ form label.top input:required:valid{
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    ;
 }
   
 table, th, td {
-    border: 1px solid #ddd;
+    border: 3px solid #ddd;
     
 }
   
@@ -578,14 +609,21 @@ text-align: center;
         text-decoration: none;
         color: white;
     }
-    /*-------------------CONTACTA PAGE STYLES MEDIA VERSION-----------*/
+    /*-------------------CONTACT PAGE STYLES MEDIA VERSION-----------*/
     .contact-main {
         flex-direction: column; 
         align-items: center;
     }
 
-    .contact-main h1 {
-        font-size: 1.2rem;  
+    #contact-image {
+        max-width: 30%;  
+        height: auto;
+    }
+    #logo-contactus h1 {
+        font-size: 25px;  
+    }
+    #logo-contactus{
+        height: 100px;
     }
 
     form {
@@ -664,4 +702,5 @@ table td:nth-child(3){
     max-width: 30%;  
     height: auto;
 }
+
 }
