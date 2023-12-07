@@ -377,7 +377,7 @@ table td:nth-child(2){
     /*align-items: center;*/
     text-align: center;
     margin: 10px;
-    height: 400px;
+    height: 500px;
     padding-top: 30px;
     width: 30%; /* Ajusta el ancho según sea necesario */
     border: 2px solid gold;
