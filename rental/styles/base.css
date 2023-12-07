@@ -399,7 +399,6 @@ table td:nth-child(2){
   }
 
   .fleet-item img {
-    max-width: 100%;
     height: auto;
     margin-bottom: 8px;
    
