@@ -379,7 +379,7 @@ table td:nth-child(2){
     margin: 10px;
     height: 500px;
     padding-top: 30px;
-    padding-bottom: 20px;
+    margin-bottom: 50px;
     width: 30%; /* Ajusta el ancho según sea necesario */
     border: 2px solid gold;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
