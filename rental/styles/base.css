@@ -176,7 +176,6 @@ hr {
     width: 100%;
     padding: 20px;  
     box-sizing: border-box;
-    
    
 }
 .background-form p {
@@ -687,11 +686,11 @@ font-size: 40px;
     }
 
     form {
-        width: 90%;  
+        width: 100%;  
     }
     .background-form,
     .addresses {
-        width: 100%; /* En la versión móvil, ambos ocupan el ancho completo */
+        width: 90%; /* En la versión móvil, ambos ocupan el ancho completo */
         max-width: 100%; /* Ajusta el ancho máximo al 100% */
         margin-right: 0; /* Elimina el margen derecho en la versión móvil */
         float: none; /* Reinicia la propiedad float */
