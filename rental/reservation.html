@@ -53,99 +53,125 @@
                 
             </div>
         </header>    
-        <main id="reservations"> 
-            <div id="reservation-container"></div> 
-                <div id="form-request">
-                <h1> Make a reservation </h1>
-                <form method="get" action="registered.html">
-                    <label for="date">Date of the rental*</label>
-                    <input type="date" id="date" name="date" required>
-        
-                    <label for="period">Period of the rental*</label>
-                    <select id="period" name="period" required>
-                        <option value="half-day">Half Day</option>
-                        <option value="full-day">Full Day</option>
-                    </select>
-        
-                    <label for="rental-type">Rental Type*</label>
-                    <select id="rental-type" name="rental-type" required>
-                        <option value="Honda-Metro">Honda Metro Scooter</option>
-                        <option value="Honda-Dio">Honda Dio Scooter</option>
-                        <option value="Honda PCX150">Honda PCX150 Scooter</option>
-                        <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
-                        <option value="Jeep Wrangler 4 door">Jeep Wrangler 4 door</option>
-                        <option value="Jeep Wrangler 2 door">Jeep Wrangler 2 door</option>
-                    </select>
+        <main>
+         
+            <div id="logo-reservation">
+                <h1>Book now</h1>
+                <img id="reservation-image" src="images/booknow.png" alt="Make your reservation">
+            </div>
+                <div id="reservations">
+                    <div id="reservation-container"></div> 
+                        <div id="form-request">
+                        <h1> Make a reservation </h1>
+                        <form method="get" action="registered.html">
+                            <label for="date">Date of the rental*</label>
+                            <input type="date" id="date" name="date" required>
+                
+                            <label for="period">Period of the rental*</label>
+                            <select id="period" name="period" required>
+                                <option value="half-day">Half Day</option>
+                                <option value="full-day">Full Day</option>
+                            </select>
+            
+                            <label for="rental-type">Rental Type*</label>
+                            <select id="rental-type" name="rental-type" required>
+                                <option value="Honda-Metro">Honda Metro Scooter</option>
+                                <option value="Honda-Dio">Honda Dio Scooter</option>
+                                <option value="Honda PCX150">Honda PCX150 Scooter</option>
+                                <option value="Honda Pioneer ATV">Honda Pioneer ATV</option>
+                                <option value="Jeep Wrangler 4 door">Jeep Wrangler 4 door</option>
+                                <option value="Jeep Wrangler 2 door">Jeep Wrangler 2 door</option>
+                            </select>
 
-                    <label for="number">Number of units*</label>
-                    <div class="number-input">
-                        <input type="number" id="number" name="number" value="1" min="1" max="5" required>
-                    </div>
-                    <br>
-                    <label for="phone">Phone Number*</label>
-                    <input type="tel" id="phone" name="phone" required>
-        
-                    <label for="name">Name*</label>
-                    <input type="text" id="name" name="name" required>
+                            <label for="number">Number of units*</label>
+                            <div class="number-input">
+                                <input type="number" id="number" name="number" value="1" min="1" max="5" required>
+                            </div>
+                            <br>
+                            <label for="phone">Phone Number*</label>
+                            <input type="tel" id="phone" name="phone" required>
+                
+                            <label for="name">Name*</label>
+                            <input type="text" id="name" name="name" required>
 
-                    <label for="last name">Last Name*</label>
-                    <input type="text" id="lastname" name="lastname" required>
-        
-                    <label for="email">Email*</label>
-                    <input type="email" id="email" name="email" required>
-        
-                    <label for="location">Home State or Country*</label>
-                    <select id="location" name="location" required>
-                        <optgroup label="State">
-                        <option value="">Please select your state/country      &#9662</option>
-                            <option value="mexico DF">Mexico DF</option>
-                            <option value="jalisco">Jalisco</option>
-                            <option value="chihuahua">Chihuahua</option>
-                            <option value="guerrero">Guerrero</option>
-                            <option value="puebla">Puebla</option>
-                            <option value="oaxaca">Oaxaca</option>
-                        </optgroup>
-                        <optgroup label="Country">
-                            <option value="australia">Australia</option>
-                            <option value="brazil">Brazil</option>
-                            <option value="belice">Belice</option>
-                            <option value="canada">Canada</option>
-                            <option value="china">China</option>
-                            <option value="france">France</option>
-                            <option value="germany">Germany</option>
-                            <option value="russia">Russia</option>
-                            <option value="spain">Spain</option>
-                            <option value="uk">United Kingdom</option>
-                            <option value="usa">United States</option>  
-                            <option value="other">Other</option> 
-                        </optgroup>               
-                        </select>
-        
-                    <label for="cruise-line">Cruise Line (if applicable)</label>
-                    <textarea id="cruise-line" name="cruise-line"rows="3"></textarea>
-        
-                    <label for="accommodations">Special Accommodations/Comments. Do you need a drop off?</label>
-                    <textarea id="accommodations" name="accommodations" rows="4"></textarea>
-        
-                    <button type="submit">Submit</button>
-                </form>
-                </div> 
-            </div>    
+                            <label for="last name">Last Name*</label>
+                            <input type="text" id="lastname" name="lastname" required>
+                
+                            <label for="email">Email*</label>
+                            <input type="email" id="email" name="email" required>
+                
+                            <label for="location">Home State or Country*</label>
+                            <select id="location" name="location" required>
+                                <option value="">Please select your state/country      &#9662</option>
+                                <optgroup label="State">
+                                    <option value="mexico DF">Mexico DF</option>
+                                    <option value="jalisco">Jalisco</option>
+                                    <option value="chihuahua">Chihuahua</option>
+                                    <option value="guerrero">Guerrero</option>
+                                    <option value="puebla">Puebla</option>
+                                    <option value="oaxaca">Oaxaca</option>
+                                </optgroup>
+                                <optgroup label="Country">
+                                    <option value="australia">Australia</option>
+                                    <option value="brazil">Brazil</option>
+                                    <option value="belice">Belice</option>
+                                    <option value="canada">Canada</option>
+                                    <option value="china">China</option>
+                                    <option value="france">France</option>
+                                    <option value="germany">Germany</option>
+                                    <option value="russia">Russia</option>
+                                    <option value="spain">Spain</option>
+                                    <option value="uk">United Kingdom</option>
+                                    <option value="usa">United States</option>  
+                                    <option value="other">Other</option> 
+                                </optgroup>               
+                                </select>
+                
+                            <label for="cruise-line">Cruise Line (if applicable)</label>
+                            <textarea id="cruise-line" name="cruise-line"rows="3"></textarea>
+                
+                            <label for="accommodations">Special Accommodations/Comments. Do you need a drop off?</label>
+                            <textarea id="accommodations" name="accommodations" rows="4"></textarea>
+                
+                            <button type="submit">Submit</button>
+                        </form>    
+                </div>
+            
                 <div id="rental-information">
                     <div id="rental-wrapper">
-                    <h2>Rental Services and Agreements</h2>
-                    <p>A $50 security deposit is required to confirm reservations.</p>
-                    <p>A valid drivers license is required in hand at the time of rental.</p>
-                    <p>No one under the age of 12 years of age are allowed to ride on the scooters.</p>
-                    <p>Fuel charge is not included.</p>
-                    <p>Unlimited mileage.</p>
-                    <p>Half day stands for 3 hours</p>
-                    <p>Liability insurance is included.</p>
-                    <p>Damage insurance is available for purchase.</p>
-                    <p>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</p>
-                    <p>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</p>
-                    <p>Rentals may be returned to either physical location.</p>
-                </div>
+                        <h2>Rental Services and Agreements</h2>
+                        <section>
+                            <img src="images/deposit.png" alt="Security Deposit">
+                            <p>A $50 security deposit is required to confirm reservations.</p>
+                            <p>Half day stands for 3 hours</p>
+                        </section>
+                        <section>
+                            <img src="images/driverlicense.png" alt="Driver License">
+                            <p>A valid drivers license is required in hand at the time of rental.</p>
+                            <p>No one under the age of 12 years of age are allowed to ride on the scooters.</p>
+                        </section>
+                        <section>
+                            <img src="images/fuel.png" alt="Fuel">
+                            <p>Fuel charge is not included.</p>
+                            <p>Unlimited mileage.</p>
+                        </section>
+                        <section>
+                            <img src="images/insurance.png" alt="Insurance">
+                            <p>Liability insurance is included.</p>
+                            <p>Damage insurance is available for purchase.</p>
+                        </section>
+                        <section>
+                                <img src="images/delivery.png" alt="Free delivery">
+                                <p>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</p>
+                                <p>Rentals may be returned to either physical location.</p>
+                        </section>
+                        <section>
+                                <img src="images/payments.png" alt="Payments">
+                                <p>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</p>
+                        </section>
+                    </div> 
+                </div> 
+               </div>
             </div>
         </main>
         <footer> 

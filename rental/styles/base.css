@@ -411,16 +411,30 @@ table td:nth-child(2){
     
   }
 /********************RESERVATION PAGE STYLES ***********************/
+#logo-reservation{
+    background: linear-gradient(#272c30, #272c30 80%, #f5f6f6 70%);
+    height: 300px;
+    position: relative;
+    margin-bottom: 50px;
+}
+#logo-reservation h1{
+    color:#e0e0e0;
+    font-size:100px
+}
+#reservation-image {
+    position: absolute;
+    bottom: 0; /* Adjust the top value as needed */
+    right: 0; /* Adjust the right value as needed */
+}
 
 #reservations {
     display: flex;
     justify-content: space-between;
 }
 
-
 #form-request {
     margin-top: 20px;
-    width: 66%;
+    width: 60%;
 }
 
 #form-request h1{
@@ -488,16 +502,41 @@ text-align: center;
 }
 
 #rental-information {
-    width: 33%;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     box-sizing: border-box;
     padding: 20px;
     margin-right: 50px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-height: 600px; 
     margin-top: 20px;
+    flex: 1; 
+    width: auto
 }
+
+
+#rental-information section {
+    background-color: rgba(255, 255, 255, 0.8);  
+    max-width: 300px;  
+    margin-bottom: 20px;  
+    padding: 20px;  
+    border-radius: 10px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    transition: box-shadow 0.3s;  /
+}
+#rental-information section:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+#rental-information section img {
+    display: block;
+    margin: 0 auto;  
+    max-width: 100%;  
+    height: auto;  
+}
+/* Establece el margen derecho solo en las secciones, excepto en la última */
+#rental-information section:not(:last-child) {
+    margin-right: 20px;
+}
+
 /********************THANKS  / RESERVED PAGE STYLES ***********************/
 #funstuff {
     display: grid;
