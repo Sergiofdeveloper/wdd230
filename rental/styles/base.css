@@ -667,7 +667,10 @@ font-size: 40px;
         text-decoration: none;
         color: white;
     }
-   
+    .project-info a {
+        color: white;
+        text-decoration: none;
+    }
     /*-------------------CONTACT PAGE STYLES MEDIA VERSION-----------*/
     .contact-main {
         flex-direction: column; 
