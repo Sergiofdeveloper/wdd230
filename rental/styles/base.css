@@ -434,7 +434,7 @@ table td:nth-child(2){
 
 #form-request {
     margin-top: 20px;
-    width: 60%;
+    width: 55%;
 }
 
 #form-request h1{
@@ -693,7 +693,7 @@ font-size: 40px;
 
     #form-request {
         width: 100%;  
-        margin-right: 0; /
+        margin-right: 0; 
     }
 
     #rental-information {
@@ -708,17 +708,18 @@ font-size: 40px;
         margin-right: 0;
     }
 
-}
-#logo-reservation{
-    height: 100px;
-}
-#logo-reservation h1 {
+    #logo-reservation{
+        height: 100px;
+    }
+    #reservation-image {
+        max-width: 30%;  
+        height: auto;  
+    
+    }
+    #logo-reservation h1 {
     font-size: 50px;  
-}
-#reservation-image {
-    max-width: 35%;  
-     
-}
+    }
+
 
  /*-------------------RENTALS PAGE STYLES MEDIA VERSION-----------*/
  #rentalsTableContainer {
