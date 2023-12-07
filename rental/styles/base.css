@@ -640,11 +640,13 @@ font-size: 40px;
         height: 20px; 
         fill: gold;  
     }
-    .menu-links a.active {
-        /* Estilos para el enlace activo, por ejemplo, cambiar el color de fondo o texto */
-        background-color: #333;
-        color: gold;
+
+    .menu-links li.active a {
+        /* Estilos para resaltar la página activa */
+        color: gold; /* Cambia el color del texto a dorado, por ejemplo */
+        font-weight: bold; /* Puedes hacer el texto en negrita, por ejemplo */
     }
+   
     .footer-menu nav a {
         color: white;
         text-decoration: none;
