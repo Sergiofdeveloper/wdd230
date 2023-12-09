@@ -128,7 +128,9 @@ main {
     color: #fff; /* Cambia el color del texto en hover */
 }
 .content a{
-    decoration: none
+    color: white;
+    text-decoration: none;
+    font-size: 20px
 }
 
 footer{
