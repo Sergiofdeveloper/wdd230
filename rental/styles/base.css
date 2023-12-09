@@ -366,6 +366,10 @@ table td:nth-child(2){
     color:#e0e0e0;
     font-size:100px
 }
+#prices h1{
+    text-align: center;
+
+}
 #fleet-image {
     position: absolute;
     bottom: 0; /* Adjust the top value as needed */
@@ -393,6 +397,21 @@ table td:nth-child(2){
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
   }
+  .fleet-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Cambiar la sombra según tus preferencias */
+    transform: translateY(-5px); /* Efecto de elevación */
+}
+.fleet-item:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;  
+    z-index: -1;
+}
   .fleet-item > div {
     display: flex;
     flex-direction: column;
@@ -408,10 +427,9 @@ table td:nth-child(2){
 
   .fleet-item img {
     height: auto;
-    margin-bottom: 8px;
-   
-    
+    margin-bottom: 8px;    
   }  
+
   .additional-info {
     font-size: 16px;
     margin-top: 5px;
@@ -575,6 +593,7 @@ font-size: 40px;
 @media screen and (max-width: 768px) {
     body {
         overflow-x: hidden; /* Evita el scroll horizontal en la versión móvil */
+        width: 100%;
     }
     header {
         height: 150px;  
@@ -682,7 +701,7 @@ font-size: 40px;
         height: auto;
     }
     #logo-contactus h1 {
-        font-size: 25px;  
+        font-size: 50px;  
     }
     #logo-contactus{
         height: 100px;
@@ -705,17 +724,18 @@ font-size: 40px;
 
       /*-------------------RESERVATION PAGE STYLES MEDIA VERSION-----------*/
 
-      #reservations {
+    #reservations {
         flex-direction: column; 
     }
 
     #form-request {
-        width: 100%;  
+        width: 80%;  
         margin-right: 0; 
+        margin-left: 20px;
     }
 
     #rental-information {
-        width: 100%;  
+        width:100%;  
         margin-right: 0; 
         margin-top: 20px; 
 
@@ -741,12 +761,12 @@ font-size: 40px;
 
  /*-------------------RENTALS PAGE STYLES MEDIA VERSION-----------*/
  #rentalsTableContainer {
-    padding: 5px; /* Ajusta el relleno para dispositivos móviles */
+    padding: 5px;  
     max-width: 100%;
 }
 
 table, th, td {
-    font-size: 8px; /* Ajusta el tamaño de fuente para dispositivos móviles */
+    font-size: 8px;  
     padding: 4px;
 }
 table td:first-child {
@@ -761,6 +781,10 @@ table td:nth-child(3){
     width: 30%;  
 
 }
+#prices h1{
+    font-size: 16px;
+}
+
 .fleet-item {
     width: 70%;  
 }
@@ -771,10 +795,12 @@ table td:nth-child(3){
     height: 100px;
 }
 #logo-fleet h1 {
-    font-size: 30px;  
+    font-size: 35px;  
+    text-align: left;
 }
 #logo-prices h1 {
-    font-size: 25px;  
+    font-size: 35px;  
+    text-align: left;
 }
 #fleet-image {
     max-width: 50%;  
