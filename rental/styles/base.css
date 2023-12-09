@@ -127,6 +127,9 @@ main {
 .overlay button:hover a {
     color: #fff; /* Cambia el color del texto en hover */
 }
+.content a{
+    decoration: none
+}
 
 footer{
     position: relative;
