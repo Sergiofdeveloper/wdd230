@@ -119,6 +119,7 @@ main {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);  
 }
 
 .overlay button:hover {
@@ -250,7 +251,7 @@ form {
 
 form fieldset{
     margin:rem 0;
-    border: 2px solid  goldenrod;
+    border: 2px solid  gold;
     border-radius: 10px;
     padding-left: 10px;
     padding-bottom: 10px;
@@ -302,7 +303,7 @@ form label.top textarea {
 
 form input.submitBtn {
     border: none;
-    background-color: goldenrod;
+    background-color: gold;
     color: rgb(6, 6, 6);
     border-radius: 1rem;
     padding: .75rem 1.5rem;
@@ -320,7 +321,7 @@ form input.submitBtn:hover {
 /* esto es para ayudar con las casillas requeridas*/
 
 form label.top input:required{
-   border-left: goldenrod solid 10px; 
+   border-left: gold solid 10px; 
 }
 
 form label.top input:required:valid{
@@ -721,11 +722,14 @@ font-size: 40px;
     }
 
     .menu-links li.active a {
-        /* Estilos para resaltar la página activa */
-        color: gold; /* Cambia el color del texto a dorado, por ejemplo */
-        font-weight: bold; /* Puedes hacer el texto en negrita, por ejemplo */
+        
+        color: gold; 
+        font-weight: bold;
     }
-   
+    .overlay {
+        display:none
+    }
+
     .footer-menu nav a {
         color: white;
         text-decoration: none;
