@@ -847,9 +847,56 @@ font-size: 40px;
     .overlay {
         display:none
     }
-    .visit-cozumel {
-        width: 48%; /* Para que aparezcan al menos 2 elementos por fila en pantallas más grandes */
+    #info-container {
+        flex-direction: column; /* Cambia a disposición de columna en pantallas más pequeñas */
     }
+
+    .info {
+        width: 100%; /* Ocupa el ancho completo en pantallas más pequeñas */
+        margin-bottom: 20px;
+    }
+
+    .info:not(:last-child) {
+        border-right: none; /* Elimina el borde derecho en pantallas más pequeñas */
+    }
+
+    .info h1 {
+        font-size: 36px; /* Reduzco el tamaño de la fuente para pantallas más pequeñas */
+    }
+
+    .places {
+        width: 100%; /* Ocupa el ancho completo en pantallas más pequeñas */
+    }
+
+    .visit-cozumel {
+        width: 100%; /* Ocupa el ancho completo en pantallas más pequeñas */
+        margin: 1% 0; /* Ajusta el margen para dar un poco de espacio entre elementos */
+    }
+
+    .places h1 {
+        margin-right: 0; /* Elimina el margen derecho */
+    }
+
+    #weather-info {
+        width: 100%; /* Ocupa el ancho completo en pantallas más pequeñas */
+    }
+
+    .weather, .forecast {
+        margin-top: 10px; /* Ajusta el margen superior para dar más espacio en pantallas pequeñas */
+    }
+
+    .weather-card, .forecast-card {
+        margin: 10px 0; /* Ajusta el margen superior e inferior */
+    }
+    
+    .weather-card img, .forecast-card img {
+        max-width: 80px; /* Reduzco el tamaño máximo de la imagen */
+    }
+
+    .visit-cozumel img {
+        margin-bottom: 10px; /* Ajusta el espacio inferior de las imágenes */
+    }
+}
     .footer-menu nav a {
         color: white;
         text-decoration: none;
