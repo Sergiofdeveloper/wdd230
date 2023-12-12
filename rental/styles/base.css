@@ -184,24 +184,40 @@ main {
 
 #info-cozumel {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-   
 }
+
 .places {
-    width: 66.66%; /* 2/3 of the page */
+    width: 66.666%; /* 2/3 del ancho total de la página */
+    display: flex;
+    flex-wrap: wrap;
+}
+.visit-cozumel {
+    width: 48%; /* 2 elementos por fila ocupando todo el ancho posible */
+    margin: 1%;
     box-sizing: border-box;
-    padding-right: 20px; /* Add some padding for spacing */
+    border: 1px solid #ccc; /* Borde */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    transition: transform 0.3s ease-in-out; 
+    padding: 5px;
+    font-size: 14px;
+}
+.visit-cozumel:hover {
+    transform: scale(1.05); /* Efecto de escala al pasar el ratón por encima */
 }
 
 .places h1 {
-    margin-bottom: 20px;
+    text-align: center; 
+    background-color: gold;  
+    padding: 10px;  
+    margin: 0;  
+    width: 100%;
+    margin-right: 10px;  
+    box-sizing: border-box;  
 }
 
 #weather-info {
-    width: 33.33%; /* 1/3 de la página */
-    box-sizing: border-box;
-    margin-top: 20px;
+    width: 33.333%; /* 1/3 del ancho total de la página */
 }
 
 .weather, .forecast {
@@ -230,14 +246,11 @@ main {
     height: auto;
     margin-bottom: 10px;
 }
-.visit-cozumel {
-    width: 100%; /* Ocupar todo el ancho disponible */
-    max-width: 300px; /* Puedes ajustar el máximo si lo deseas */
-    margin-bottom: 30px; /* Añadido espacio entre elementos para mejor legibilidad */
-}
+
 
 .visit-cozumel img {
-    width: 100%; /* Asegurándose de que las imágenes se ajusten al contenedor */
+    width: 100%;
+    height: auto; /* Asegurándose de que las imágenes se ajusten al contenedor */
 }
 
 footer{
