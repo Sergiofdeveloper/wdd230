@@ -879,10 +879,12 @@ font-size: 40px;
         margin-right: 0;  
         font-size: 15px;
     }
-    .visit-cozumel H2{
+    .visit-cozumel h2{
         font-size: 15px; 
     }
-    
+    .visit-cozumel p{
+        font-size: 12px; 
+    }
     #weather-info {
         width: 100%; /* Ocupa el ancho completo en pantallas más pequeñas */
         font-size: 50%;
