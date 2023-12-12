@@ -175,7 +175,8 @@ main {
     margin-bottom: 20px;  
     box-sizing: border-box;
     text-align: justify;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .info:not(:last-child) {
@@ -234,10 +235,8 @@ main {
     box-sizing: border-box; 
     margin-right: 10px; 
 }
-
-
 .weather, .forecast {
-    width: 100%; /* Ocupa el 100% del contenedor de weather-info */
+    width: 100%;  
     box-sizing: border-box;
     margin-top: 20px;
 }
@@ -262,7 +261,10 @@ main {
     height: auto;
     margin-bottom: 10px;
 }
-
+#weather-container, #forecast-container{
+    font-size: 20px;
+    text-align: center;
+}
 
 .visit-cozumel img {
     width: 100%;
@@ -865,7 +867,6 @@ font-size: 40px;
     }
     .info {
         width: 100%; /* Ocupa el ancho completo en pantallas más pequeñas */
-        margin-bottom: 20px;
         border-right: none; /* Elimina el borde derecho en pantallas más pequeñas */
     }
 
