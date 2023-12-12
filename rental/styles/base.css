@@ -193,7 +193,7 @@ main {
     flex-wrap: wrap;
 }
 .visit-cozumel {
-    width: 48%; /* 2 elementos por fila ocupando todo el ancho posible */
+    width: 47%; /* 2 elementos por fila ocupando todo el ancho posible */
     margin: 1%;
     box-sizing: border-box;
     border: 1px solid #ccc; /* Borde */
@@ -213,7 +213,8 @@ main {
     margin: 0;  
     width: 100%;
     margin-right: 10px;  
-    box-sizing: border-box;  
+    box-sizing: border-box; 
+  
 }
 
 #weather-info {
@@ -875,9 +876,13 @@ font-size: 40px;
     }
 
     .places h1 {
-        margin-right: 0; /* Elimina el margen derecho */
+        margin-right: 0;  
+        font-size: 15px;
     }
-
+    .visit-cozumel H2{
+        font-size: 15px; 
+    }
+    
     #weather-info {
         width: 100%; /* Ocupa el ancho completo en pantallas más pequeñas */
         font-size: 50%;
@@ -1036,4 +1041,3 @@ table td:nth-child(3){
     height: auto;
 }
 
-}
