@@ -168,7 +168,7 @@ main {
 .info {
     width: calc(33.33% - 10px); /* Calcula el ancho para tres bloques con 10px de separación entre ellos */
     padding: 20px;
-    margin-bottom: 20px;  
+    margin-bottom: 10px;  
     box-sizing: border-box;
     text-align: justify;
 }
@@ -854,7 +854,7 @@ font-size: 40px;
 
     .info {
         width: 100%; /* Ocupa el ancho completo en pantallas más pequeñas */
-        margin-bottom: 20px;
+      
     }
 
     .info:not(:last-child) {
@@ -862,7 +862,10 @@ font-size: 40px;
     }
 
     .info h1 {
-        font-size: 36px; /* Reduzco el tamaño de la fuente para pantallas más pequeñas */
+        font-size: 24px; /* Reduzco el tamaño de la fuente para pantallas más pequeñas */
+    }
+    .info h2 {
+        font-size: 18px; /* Reduzco el tamaño de la fuente para pantallas más pequeñas */
     }
 
     .places {
