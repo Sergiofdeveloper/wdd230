@@ -28,15 +28,20 @@ document.addEventListener('DOMContentLoaded', function () {
           const subCell = document.createElement('div');
           subCell.className = 'reservation-info';
 
+          const subList = document.createElement('ul');
+
           for (const subKey in rental[column]) {
-            const subElement = document.createElement('div');
-            subElement.textContent = `${subKey}: ${rental[column][subKey]}`;
-            subCell.appendChild(subElement);
+            const listItem = document.createElement('li');
+            // Añadir el label solo si la subKey no es numérica
+            listItem.textContent = isNaN(subKey) ? `${subKey}: ${rental[column][subKey]}` : rental[column][subKey];
+            subList.appendChild(listItem);
           }
 
+          subCell.appendChild(subList);
           cell.appendChild(subCell);
         } else {
           cell.className = 'normal-cell';
+          // Solo mostrar el valor sin la etiqueta
           cell.textContent = rental[column];
         }
       });
@@ -64,11 +69,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const productName = document.createElement('div');
         productName.className = 'product-name';
+        // Mostrar el valor de "Rental Type"
         productName.textContent = rental['Rental Type'];
 
         const additionalInfo = document.createElement('div');
         additionalInfo.className = 'additional-info';
-        additionalInfo.textContent = `${rental['cc']}, ${rental['Accessories1']}, ${rental['Accessories2']}, ${rental['Horse power']}`;
+
+        additionalInfo.style.textAlign = 'left';
+        const infoList = document.createElement('ul');
+
+        const propertiesToShow = ['cc', 'Accessories1', 'Accessories2', 'Horse power'];
+        propertiesToShow.forEach(property => {
+          const listItem = document.createElement('li');
+          listItem.textContent = rental[property];
+          infoList.appendChild(listItem);
+        });
+
+        additionalInfo.appendChild(infoList);
 
         rentalDiv.appendChild(img);
         rentalDiv.appendChild(productName);
@@ -81,4 +98,3 @@ document.addEventListener('DOMContentLoaded', function () {
       console.error('Error fetching JSON:', error);
     });
 });
-

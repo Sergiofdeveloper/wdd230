@@ -865,51 +865,51 @@ font-size: 40px;
         display:none
     }
     .info {
-        width: 100%; /* Ocupa el ancho completo en pantallas más pequeñas */
-        border-right: none; /* Elimina el borde derecho en pantallas más pequeñas */
+        width: 100%;  
+        border-right: none;  
     }
 
     .info h1 {
-        font-size: 36px; /* Reduzco el tamaño de la fuente para pantallas más pequeñas */
+        font-size: 36px;  
     }
     
     #info-cozumel {
-        flex-direction: column; /* Cambia a disposición de columna en pantallas más pequeñas */
+        flex-direction: column;   
     }
 
     .places {
-        width: 100%; /* Ocupa el ancho completo en pantallas más pequeñas */
-        margin-right: 0; /* Elimina el margen derecho */
+        width: 100%;  
+        margin-right: 0;  
     }
 
     .visit-cozumel {
-        width: 100%; /* Ocupa el ancho completo en pantallas más pequeñas */
-        margin: 10px 0; /* Ajusta el margen para dar más espacio entre elementos */
+        width: 100%;  
+        margin: 10px 0;  
     }
 
     .places h1, #weather-info h1 {
-        margin-right: 0; /* Elimina el margen derecho en h1 */
+        margin-right: 0;  
     }
 
     #weather-info {
-        width: 100%; /* Ocupa el ancho completo en pantallas más pequeñas */
-        margin-top: 20px; /* Ajusta el margen superior */
+        width: 100%;  
+        margin-top: 20px;  
     }
 
     .weather h1, .forecast h1 {
-        margin: 0; /* Elimina el margen en h1 */
+        margin: 0;  
     }
 
     .weather-card, .forecast-card {
-        margin: 10px 0; /* Ajusta el margen superior e inferior */
+        margin: 10px 0;  
     }
     
     .weather-card img, .forecast-card img {
-        max-width: 80px; /* Reduzco el tamaño máximo de la imagen */
+        max-width: 80px;  
     }
 
     .visit-cozumel img {
-        margin-bottom: 10px; /* Ajusta el espacio inferior de las imágenes */
+        margin-bottom: 10px; 
     }
 
     .footer-menu nav a {
