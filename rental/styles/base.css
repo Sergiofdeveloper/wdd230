@@ -168,7 +168,7 @@ main {
 .info {
     width: calc(33.33% - 10px); /* Calcula el ancho para tres bloques con 10px de separación entre ellos */
     padding: 20px;
-    margin-bottom: 10px;  
+    margin-bottom: 20px;  
     box-sizing: border-box;
     text-align: justify;
 }
@@ -193,14 +193,13 @@ main {
     flex-wrap: wrap;
 }
 .visit-cozumel {
-    width: 47%; /* 2 elementos por fila ocupando todo el ancho posible */
+    width: 48%; /* 2 elementos por fila ocupando todo el ancho posible */
     margin: 1%;
     box-sizing: border-box;
     border: 1px solid #ccc; /* Borde */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
     transition: transform 0.3s ease-in-out; 
     padding: 5px;
-    font-size: 14px;
 }
 .visit-cozumel:hover {
     transform: scale(1.05); /* Efecto de escala al pasar el ratón por encima */
@@ -212,9 +211,8 @@ main {
     padding: 10px;  
     margin: 0;  
     width: 100%;
-    margin-right: 10px;  
     box-sizing: border-box; 
-  
+    margin-right: 10px; 
 }
 
 #weather-info {
@@ -848,67 +846,9 @@ font-size: 40px;
     .overlay {
         display:none
     }
-    #info-container {
-        flex-direction: column; /* Cambia a disposición de columna en pantallas más pequeñas */
-    }
-
-    .info {
-        width: 100%; /* Ocupa el ancho completo en pantallas más pequeñas */
-      
-    }
-
-    .info:not(:last-child) {
-        border-right: none; /* Elimina el borde derecho en pantallas más pequeñas */
-    }
-
-    .info h1 {
-        font-size: 24px; /* Reduzco el tamaño de la fuente para pantallas más pequeñas */
-    }
-    .info h2 {
-        font-size: 18px; /* Reduzco el tamaño de la fuente para pantallas más pequeñas */
-    }
-
-    .places {
-        width: 100%; /* Ocupa el ancho completo en pantallas más pequeñas */
-        margin-right: 10px;
-    }
-
     .visit-cozumel {
-        width: 100%; /* Ocupa el ancho completo en pantallas más pequeñas */
-        margin: 1% 0; /* Ajusta el margen para dar un poco de espacio entre elementos */
+        width: 48%; /* Para que aparezcan al menos 2 elementos por fila en pantallas más grandes */
     }
-
-    .places h1 {
-        margin-right: 0;  
-        font-size: 15px;
-    }
-    .visit-cozumel h2{
-        font-size: 15px; 
-    }
-    .visit-cozumel p{
-        font-size: 12px; 
-    }
-    #weather-info {
-        width: 100%; /* Ocupa el ancho completo en pantallas más pequeñas */
-        font-size: 50%;
-    }
-
-    .weather, .forecast {
-        margin-top: 10px; /* Ajusta el margen superior para dar más espacio en pantallas pequeñas */
-    }
-
-    .weather-card, .forecast-card {
-        margin: 10px 0; /* Ajusta el margen superior e inferior */
-    }
-    
-    .weather-card img, .forecast-card img {
-        max-width: 80px; /* Reduzco el tamaño máximo de la imagen */
-    }
-
-    .visit-cozumel img {
-        margin-bottom: 10px; /* Ajusta el espacio inferior de las imágenes */
-    }
-}
     .footer-menu nav a {
         color: white;
         text-decoration: none;
@@ -1046,3 +986,4 @@ table td:nth-child(3){
     height: auto;
 }
 
+}
