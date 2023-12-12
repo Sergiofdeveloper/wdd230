@@ -145,16 +145,17 @@ main {
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
+    font-weight: bold;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);  
 }
 
 .overlay button:hover {
     background-color: #cc7700;  
+    color: #ddd;
+     
 }
 
-.overlay button:hover a {
-    color: #fff;  
-}
+
 .content a{
     color: rgb(6, 6, 6);
     text-decoration: none;
