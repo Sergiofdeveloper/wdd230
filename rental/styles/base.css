@@ -866,6 +866,7 @@ font-size: 40px;
 
     .places {
         width: 100%; /* Ocupa el ancho completo en pantallas más pequeñas */
+        margin-right: 10px;
     }
 
     .visit-cozumel {
@@ -879,6 +880,7 @@ font-size: 40px;
 
     #weather-info {
         width: 100%; /* Ocupa el ancho completo en pantallas más pequeñas */
+        font-size: 50%;
     }
 
     .weather, .forecast {
