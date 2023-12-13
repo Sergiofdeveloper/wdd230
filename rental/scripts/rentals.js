@@ -2,11 +2,11 @@ document.addEventListener('DOMContentLoaded', function () {
   const rentalsTableContainer = document.getElementById('rentalsTableContainer');
   const fleetContainer = document.getElementById('fleet');
 
-  // Function to create and populate the table
+  // Function createstable
   function createRentalsTable(data) {
     const table = document.createElement('table');
 
-    // Create table header
+    // Creates table header
     const headerRow = table.insertRow();
     const columnsToDisplay = ['Rental Type', 'Max. Persons', 'Reservation', 'Walk in'];
     columnsToDisplay.forEach(column => {
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
       headerRow.appendChild(th);
     });
 
-    // Create table rows
+    // Creates table rows
     data.rentals.forEach(rental => {
       const row = table.insertRow();
       columnsToDisplay.forEach(column => {
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
           cell.appendChild(subCell);
         } else {
           cell.className = 'normal-cell';
-          // Solo mostrar el valor sin la etiqueta
+          // shows only the value, no label
           cell.textContent = rental[column];
         }
       });
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
     rentalsTableContainer.appendChild(table);
   }
 
-  // Fetch JSON data
+  // Fetch JSON  
   fetch('data/rentals.json')
     .then(response => response.json())
     .then(data => {
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const productName = document.createElement('div');
         productName.className = 'product-name';
-        // Mostrar el valor de "Rental Type"
+        // Show Rental Type values
         productName.textContent = rental['Rental Type'];
 
         const additionalInfo = document.createElement('div');

@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(response => response.json())
         .then(data => {
              
-            const temperature = (data.main.temp - 273.15).toFixed(2); // Convert Kelvin to Celsius
+            const temperature = (data.main.temp - 273.15).toFixed(2); // Convert  to Celsius
             const humidity = data.main.humidity;
             const weatherDescription = data.weather[0].description;
             const icon = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
     fetch(currentWeatherUrl)
         .then(response => response.json())
         .then(data => {
-            const highTemp = (data.main.temp_max - 273.15).toFixed(2); // Convert Kelvin to Celsius
+            const highTemp = (data.main.temp_max - 273.15).toFixed(2); // Convert  to Celsius
             highTempMessage.innerHTML = `Highest Temperature Today in Cozumel: ${highTemp} &deg;C <button id="close-message">&times;</button>`;
 
              

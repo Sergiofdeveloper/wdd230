@@ -479,8 +479,7 @@ form label.top input:required:valid{
 .addresses .address1,
 .addresses .address2 {
     border: 1px solid #ddd;      
-    border-radius: 8px;         
-                   
+    border-radius: 8px;                      
     background-color: #f7f7f7;
     margin-bottom: 10px;  
     margin-top: 40px;
